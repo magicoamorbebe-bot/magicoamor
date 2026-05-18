@@ -25,17 +25,17 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--cream);colo
 .cat-btn.active{color:var(--gold-dk);border-bottom:2px solid var(--gold);font-weight:600}
 .products{padding:16px}
 .sec-label{font-size:10px;letter-spacing:1px;color:var(--soft);text-transform:uppercase;margin-bottom:12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}@media(max-width:480px){.grid{grid-template-columns:repeat(2,1fr);gap:8px}}
 .pcard{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s}
 .pcard:hover{border-color:var(--gold);box-shadow:0 4px 16px rgba(201,160,64,0.15)}
-.pcard-img{height:148px;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative;overflow:hidden;background:var(--cream2)}
+.pcard-img{height:160px;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative;overflow:hidden;background:var(--cream2)}
 .pcard-img img{width:100%;height:100%;object-fit:cover}
 .stock-badge{position:absolute;top:5px;right:5px;font-size:9px;padding:2px 6px;border-radius:7px;font-weight:600}
 .stock-badge.low{background:#FFF3E0;color:#C47000;border:1px solid #F5C842}
 .stock-badge.out{background:#FDE8E8;color:#A32D2D;border:1px solid #F09595}
 .tag-badge{position:absolute;top:5px;left:5px;background:var(--gold);color:#fff;font-size:9px;padding:2px 7px;border-radius:7px;font-weight:600}
-.pcard-body{padding:9px 10px 12px}
-.pcard-name{font-size:12px;font-weight:600;margin-bottom:3px;line-height:1.3}
+.pcard-body{padding:9px 10px 12px;min-height:80px}
+.pcard-name{font-size:12px;font-weight:600;margin-bottom:3px;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .pcard-price{font-size:14px;font-weight:700;color:var(--gold-dk)}
 .sz-dots{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px}
 .sz-dot{font-size:9px;padding:2px 5px;border-radius:4px;border:1px solid var(--border);color:var(--muted);background:var(--cream2)}
