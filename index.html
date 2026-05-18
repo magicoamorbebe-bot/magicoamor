@@ -250,66 +250,66 @@ function openProduct(id){
   let selSz=null,qty=1,fotoIdx=0;
   const fotos=(p.fotos&&p.fotos.length)?p.fotos:(p.foto?[p.foto]:[]);
 
-  function renderGallery(){
-    const wrap = document.createElement('div');
-    wrap.style.cssText = 'position:relative;width:100%;height:100%';
+  function updateGallery(){
+    const col=document.getElementById('gal-col-'+id);
+    if(!col)return;
+    col.innerHTML='';
     if(!fotos.length){
-      const em = document.createElement('span');
-      em.style.fontSize = '52px';
-      em.textContent = p.emoji;
-      wrap.appendChild(em);
-      return wrap.outerHTML;
+      const em=document.createElement('span');
+      em.style.fontSize='52px';
+      em.textContent=p.emoji;
+      col.appendChild(em);
+      return;
     }
-    const img = document.createElement('img');
-    img.src = fotos[fotoIdx];
-    img.alt = 'foto';
-    img.style.cssText = 'width:100%;height:100%;object-fit:contain';
-    wrap.appendChild(img);
-    if(fotos.length > 1){
-      const btnL = document.createElement('button');
-      btnL.innerHTML = '&#8249;';
-      btnL.setAttribute('onclick','galPrev_'+id+'()');
-      btnL.style.cssText = 'position:absolute;left:6px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.85);border:1px solid #EEE0C8;border-radius:50%;width:30px;height:30px;font-size:18px;cursor:pointer;z-index:5';
-      wrap.appendChild(btnL);
-      const btnR = document.createElement('button');
-      btnR.innerHTML = '&#8250;';
-      btnR.setAttribute('onclick','galNext_'+id+'()');
-      btnR.style.cssText = 'position:absolute;right:6px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.85);border:1px solid #EEE0C8;border-radius:50%;width:30px;height:30px;font-size:18px;cursor:pointer;z-index:5';
-      wrap.appendChild(btnR);
-      const dots = document.createElement('div');
-      dots.style.cssText = 'position:absolute;bottom:6px;left:0;right:0;display:flex;justify-content:center;gap:5px';
+    const img=document.createElement('img');
+    img.src=fotos[fotoIdx];
+    img.alt=p.name;
+    img.style.width='100%';
+    img.style.height='100%';
+    img.style.objectFit='contain';
+    col.appendChild(img);
+    if(fotos.length>1){
+      const btnL=document.createElement('button');
+      btnL.textContent='<';
+      btnL.style.cssText='position:absolute;left:6px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.85);border:1px solid #EEE0C8;border-radius:50%;width:30px;height:30px;font-size:18px;cursor:pointer;z-index:5';
+      btnL.onclick=function(){fotoIdx=(fotoIdx-1+fotos.length)%fotos.length;updateGallery();};
+      col.appendChild(btnL);
+      const btnR=document.createElement('button');
+      btnR.textContent='>';
+      btnR.style.cssText='position:absolute;right:6px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.85);border:1px solid #EEE0C8;border-radius:50%;width:30px;height:30px;font-size:18px;cursor:pointer;z-index:5';
+      btnR.onclick=function(){fotoIdx=(fotoIdx+1)%fotos.length;updateGallery();};
+      col.appendChild(btnR);
+      const dots=document.createElement('div');
+      dots.style.cssText='position:absolute;bottom:6px;left:0;right:0;display:flex;justify-content:center;gap:5px';
       fotos.forEach(function(_,i){
-        const dot = document.createElement('span');
-        dot.style.cssText = 'width:6px;height:6px;border-radius:50%;display:inline-block;background:'+(i===fotoIdx?'var(--gold)':'#DDD0B8');
+        const dot=document.createElement('span');
+        dot.style.cssText='width:6px;height:6px;border-radius:50%;display:inline-block;background:'+(i===fotoIdx?'var(--gold)':'#DDD0B8');
         dots.appendChild(dot);
       });
-      wrap.appendChild(dots);
+      col.appendChild(dots);
     }
-    return wrap.outerHTML;
   }
 
   function render(){
     const szOpts=Object.entries(p.sizes).map(function(entry){
       const s=entry[0],q=entry[1];
-      const disabled=q===0;
-      const selected=selSz===s;
-      let sub='';
-      if(q===0)sub='<br><span style="font-size:9px">agotado</span>';
-      else if(q<=2)sub='<br><span style="font-size:9px;color:#C47000">último'+(q>1?'s':'')+' '+q+'</span>';
-      const cls='sz-opt'+(disabled?' disabled':'')+(selected?' selected':'');
-      const click=disabled?'':' onclick="selSz_'+id+'(''+s+'')"';
-      return '<div class="'+cls+'"'+click+'>'+s+sub+'</div>';
+      const el=document.createElement('div');
+      el.className='sz-opt'+(q===0?' disabled':'')+(selSz===s?' selected':'');
+      if(q!==0) el.setAttribute('onclick','selSz_'+id+'("'+s+'")');
+      el.textContent=s;
+      if(q===0){el.appendChild(document.createElement('br'));const t=document.createElement('span');t.style.fontSize='9px';t.textContent='agotado';el.appendChild(t);}
+      else if(q<=2){el.appendChild(document.createElement('br'));const t=document.createElement('span');t.style.cssText='font-size:9px;color:#C47000';t.textContent='ultimos '+q;el.appendChild(t);}
+      return el.outerHTML;
     }).join('');
 
     const qtyRow=selSz
       ?'<div class="qty-row"><span style="font-size:11px;color:var(--muted)">Cantidad:</span><button class="qty-btn" onclick="chQ_'+id+'(-1)">−</button><span class="qty-val">'+qty+'</span><button class="qty-btn" onclick="chQ_'+id+'(1)">+</button><span style="font-size:10px;color:var(--muted)">stock: '+p.sizes[selSz]+'</span></div>'
       :'';
 
-    const html2=
-      '<div class="modal-bg" onclick="if(event.target===this)closeModal()">'
+    const modalHTML='<div class="modal-bg" onclick="if(event.target===this)closeModal()">'
       +'<div class="modal">'
       +'<button class="modal-close" onclick="closeModal()">×</button>'
-      +'<div class="modal-img-col" id="gal-col-'+id+'">'+renderGallery()+'</div>'
+      +'<div class="modal-img-col" id="gal-col-'+id+'" style="position:relative"></div>'
       +'<div class="modal-info-col">'
       +(p.tag?'<div style="display:inline-block;background:var(--gold);color:#fff;font-size:9px;padding:2px 9px;border-radius:7px">'+p.tag+'</div>':'')
       +'<h2>'+p.name+'</h2>'
@@ -322,10 +322,9 @@ function openProduct(id){
       +'<button class="add-btn"'+(selSz?'':' disabled')+' onclick="addCart_'+id+'()">🧺 Agregar a la canastita</button>'
       +'</div></div></div>';
 
-    document.getElementById('modal-root').innerHTML=html2;
+    document.getElementById('modal-root').innerHTML=modalHTML;
+    updateGallery();
 
-    window['galPrev_'+id]=function(){fotoIdx=(fotoIdx-1+fotos.length)%fotos.length;document.getElementById('gal-col-'+id).innerHTML=renderGallery();};
-    window['galNext_'+id]=function(){fotoIdx=(fotoIdx+1)%fotos.length;document.getElementById('gal-col-'+id).innerHTML=renderGallery();};
     window['selSz_'+id]=function(s){selSz=s;qty=1;render();};
     window['chQ_'+id]=function(d){if(selSz){qty=Math.max(1,Math.min(p.sizes[selSz],qty+d));render();}};
     window['addCart_'+id]=function(){
