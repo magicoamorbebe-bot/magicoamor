@@ -286,8 +286,12 @@ function renderFilteredProducts(items){
     const tot=Object.values(p.sizes).reduce((a,b)=>a+b,0);
     const agotado=tot===0;
     const ultimos=!agotado&&tot<=3;
-    const szPills=Object.entries(p.sizes).map(([s,q])=>'<span class="sz-pill'+(q===0?' out':q<=2?' low':'')+'">'+(q===0?'<s>'+s+'</s>':s)+'</span>').join('');
-    const imgHTML=p.foto?'<img src="'+p.foto+'" alt="'+p.name+'" loading="lazy" onerror="this.style.display='none'">':'<span class="prod-emoji">'+p.emoji+'</span>';
+    const szPills=Object.entries(p.sizes).map(function(e){
+      const s=e[0],q=e[1];
+      const cls='sz-pill'+(q===0?' out':q<=2?' low':'');
+      return '<span class="'+cls+'">'+(q===0?'<s>'+s+'</s>':s)+'</span>';
+    }).join('');
+    const imgHTML=p.foto?'<img src="'+p.foto+'" alt="foto" loading="lazy" style="width:100%;height:100%;object-fit:cover">':'<span class="prod-emoji">'+p.emoji+'</span>';
     return '<div class="prod-card" onclick="openProduct('+p.id+')">'
       +(agotado?'<div class="badge agotado">Agotado</div>':ultimos?'<div class="badge ultimos">Últimos</div>':'')
       +'<div class="prod-img">'+imgHTML+'</div>'
