@@ -123,6 +123,15 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--cream);colo
   .modal{grid-template-columns:1fr;max-width:98%}
   .modal-img-col{border-radius:18px 18px 0 0;min-height:260px}
 }
+
+.search-bar{display:flex;gap:8px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap;align-items:center}
+.search-input{flex:1;min-width:140px;padding:8px 12px;border:1px solid var(--border);border-radius:10px;font-size:13px;font-family:inherit;color:var(--text);background:var(--cream2);outline:none}
+.search-input:focus{border-color:var(--gold)}
+.talle-select{padding:8px 10px;border:1px solid var(--border);border-radius:10px;font-size:13px;font-family:inherit;color:var(--text);background:var(--cream2);outline:none;cursor:pointer}
+.talle-select:focus{border-color:var(--gold)}
+.search-clear{background:var(--cream2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--muted);cursor:pointer;font-family:inherit;white-space:nowrap}
+.search-clear:hover{background:var(--gold-lt);color:var(--gold-dk)}
+.search-results{font-size:11px;color:var(--muted);padding:6px 12px;background:var(--cream2);border-bottom:1px solid var(--border);display:none}
 </style>
 </head>
 <body>
@@ -150,6 +159,25 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--cream);colo
   <button class="cat-btn active" onclick="filterCat('all',this)">Todo</button>
 </div>
 
+
+<div class="search-bar">
+  <input class="search-input" id="search-input" type="text" placeholder="🔍 Buscar producto..." oninput="applyFilters()" />
+  <select class="talle-select" id="talle-select" onchange="applyFilters()">
+    <option value="">Todos los talles</option>
+    <option value="RN">RN — Recién nacido</option>
+    <option value="0">0 — 0 a 3m</option>
+    <option value="1">1 — 3 a 6m</option>
+    <option value="2">2 — 6 a 9m</option>
+    <option value="3">3 — 9 a 12m</option>
+    <option value="4">4 — 12 a 18m</option>
+    <option value="0-6m">0-6m</option>
+    <option value="6-12m">6-12m</option>
+    <option value="12-24m">12-24m</option>
+    <option value="Unico">Único</option>
+  </select>
+  <button class="search-clear" onclick="clearFilters()">✕ Limpiar</button>
+</div>
+<div class="search-results" id="search-results"></div>
 <div class="products">
   <div class="sec-label">Colección disponible</div>
   <div class="grid" id="product-grid">
@@ -225,7 +253,53 @@ function imgHTML(p,cover){
   return'<span style="font-size:40px">'+p.emoji+'</span>';
 }
 
-function renderProducts(cat){
+
+let currentCat='all';
+
+function applyFilters(){
+  const q=document.getElementById('search-input').value.toLowerCase().trim();
+  const talle=document.getElementById('talle-select').value;
+  let items=currentCat==='all'?PRODUCTS:PRODUCTS.filter(p=>p.cat===currentCat);
+  if(q) items=items.filter(p=>p.name.toLowerCase().includes(q)||p.cat.toLowerCase().includes(q));
+  if(talle) items=items.filter(p=>Object.keys(p.sizes).includes(talle)&&p.sizes[talle]>0);
+  const res=document.getElementById('search-results');
+  if(q||talle){
+    res.style.display='block';
+    res.textContent='Se encontraron '+items.length+' producto'+(items.length!==1?'s':'')+' '+(q?'con "'+q+'"':'')+' '+(talle?'en talle '+talle:'');
+  } else {
+    res.style.display='none';
+  }
+  renderFilteredProducts(items);
+}
+
+function clearFilters(){
+  document.getElementById('search-input').value='';
+  document.getElementById('talle-select').value='';
+  document.getElementById('search-results').style.display='none';
+  renderProducts(currentCat);
+}
+
+function renderFilteredProducts(items){
+  const grid=document.getElementById('product-grid');
+  if(!items.length){grid.innerHTML='<div class="loading-wrap"><div style="font-size:13px;color:var(--muted)">No hay productos con ese filtro 💛</div></div>';return;}
+  grid.innerHTML=items.map(p=>{
+    const tot=Object.values(p.sizes).reduce((a,b)=>a+b,0);
+    const agotado=tot===0;
+    const ultimos=!agotado&&tot<=3;
+    const szPills=Object.entries(p.sizes).map(([s,q])=>'<span class="sz-pill'+(q===0?' out':q<=2?' low':'')+'">'+(q===0?'<s>'+s+'</s>':s)+'</span>').join('');
+    const imgHTML=p.foto?'<img src="'+p.foto+'" alt="'+p.name+'" loading="lazy" onerror="this.style.display='none'">':'<span class="prod-emoji">'+p.emoji+'</span>';
+    return '<div class="prod-card" onclick="openProduct('+p.id+')">'
+      +(agotado?'<div class="badge agotado">Agotado</div>':ultimos?'<div class="badge ultimos">Últimos</div>':'')
+      +'<div class="prod-img">'+imgHTML+'</div>'
+      +'<div class="prod-info">'
+      +'<div class="prod-name">'+p.name+'</div>'
+      +'<div class="prod-price">$'+p.price.toLocaleString('es-AR')+'</div>'
+      +'<div class="prod-sizes">'+szPills+'</div>'
+      +'</div></div>';
+  }).join('');
+}
+
+function renderProducts(cat){currentCat=cat;
   const items=cat==='all'?PRODUCTS:PRODUCTS.filter(p=>p.cat===cat);
   const grid=document.getElementById('product-grid');
   if(!items.length){grid.innerHTML='<div class="loading-wrap"><div style="font-size:13px;color:var(--muted)">No hay productos en esta categoría 💛</div></div>';return;}
