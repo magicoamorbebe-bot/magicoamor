@@ -250,8 +250,17 @@ function filterCat(cat,btn){
 }
 
 function imgHTML(p,cover){
-  if(p.foto&&p.foto.trim())return'<img src="'+p.foto+'" alt="'+p.name+'" style="object-fit:'+(cover?'cover':'contain')+'>';
-  return'<span style="font-size:40px">'+p.emoji+'</span>';
+  if(p.foto&&p.foto.trim()){
+    const img=document.createElement('img');
+    img.src=p.foto;
+    img.alt='foto';
+    img.style.width='100%';
+    img.style.height='100%';
+    img.style.objectFit=cover?'cover':'contain';
+    img.style.display='block';
+    return img.outerHTML;
+  }
+  return '<span style="font-size:40px">'+p.emoji+'</span>';
 }
 
 
