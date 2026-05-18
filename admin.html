@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Mágico Amor</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#C9A040;--gold-lt:#F7EDCC;--gold-dk:#8B6510;--cream:#FDFAF4;--cream2:#F5EFE0;--sky:#EEF6FB;--text:#2C1F10;--muted:#8A7055;--border:#EEE0C8}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--cream);color:var(--text);min-height:100vh}
+.login-screen{position:fixed;inset:0;background:linear-gradient(160deg,#FDF6E3,#FBF0F4 50%,#EEF6FB);display:flex;align-items:center;justify-content:center;z-index:999}
+.login-box{background:#fff;border:1px solid var(--border);border-radius:20px;padding:36px 28px;width:100%;max-width:340px;text-align:center;box-shadow:0 8px 32px rgba(44,31,16,0.1)}
+.login-logo{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:var(--gold);margin-bottom:14px;box-shadow:0 0 0 5px var(--gold-lt)}
+.login-logo span{color:#fff;font-size:9px;font-weight:600;text-align:center;line-height:1.3}
+.login-box h2{font-size:18px;font-weight:600;margin-bottom:4px}
+.login-box p{font-size:12px;color:var(--muted);margin-bottom:20px}
+.login-box input{width:100%;padding:11px 14px;border:1px solid #DDD0B8;border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:12px;text-align:center;letter-spacing:3px}
+.login-btn{width:100%;background:var(--gold);color:#fff;border:none;border-radius:10px;padding:12px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
+.login-err{color:#A32D2D;font-size:12px;margin-top:8px;display:none}
+.header{background:var(--gold);padding:14px 20px;display:flex;align-items:center;gap:12px}
+.header-info{flex:1}
+.header-info .title{color:#fff;font-size:15px;font-weight:600}
+.header-info .sub{color:rgba(255,255,255,0.8);font-size:11px;margin-top:2px}
+.logout-btn{background:rgba(255,255,255,0.2);border:none;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:11px;font-family:inherit}
+.tabs{display:flex;background:#fff;border-bottom:1px solid var(--border)}
+.tab{flex:1;padding:12px;font-size:12px;text-align:center;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;border:none;background:transparent;font-family:inherit}
+.tab.active{color:var(--gold-dk);border-bottom:2px solid var(--gold);font-weight:600}
+.content{padding:20px;max-width:700px;margin:0 auto}
+.page-title{font-size:15px;font-weight:700;margin-bottom:4px}
+.page-sub{font-size:12px;color:var(--muted);margin-bottom:20px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:20px}
+.stat-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.stat-num{font-size:24px;font-weight:700;color:var(--gold-dk)}
+.stat-label{font-size:11px;color:var(--muted);margin-top:3px}
+.prod-table{width:100%;background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;border-collapse:collapse}
+.prod-table th{background:var(--gold-lt);padding:10px 12px;font-size:11px;color:var(--gold-dk);font-weight:600;text-align:left;border-bottom:1px solid var(--border)}
+.prod-table td{padding:10px 12px;font-size:12px;border-bottom:1px solid #F5EFE0;vertical-align:middle}
+.prod-table tr:last-child td{border-bottom:none}
+.prod-table tr:hover td{background:var(--cream2)}
+.stock-cell{display:flex;flex-wrap:wrap;gap:4px}
+.stock-pill{font-size:9px;padding:2px 6px;border-radius:6px;border:1px solid var(--border);background:var(--cream2);color:var(--muted)}
+.stock-pill.low{background:#FFF3E0;color:#C47000;border-color:#F5C842}
+.stock-pill.out{background:#FDE8E8;color:#A32D2D;border-color:#F09595;text-decoration:line-through;opacity:0.6}
+.edit-btn{background:var(--gold-lt);border:1px solid var(--gold);border-radius:7px;padding:4px 10px;font-size:11px;color:var(--gold-dk);cursor:pointer;font-family:inherit}
+.spinner{width:28px;height:28px;border:3px solid var(--gold-lt);border-top-color:var(--gold);border-radius:50%;animation:spin 0.8s linear infinite;margin:30px auto}
+@keyframes spin{to{transform:rotate(360deg)}}
+.alert-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.alert-card.low{border-color:#F5C842;background:#FFFBF0}
+.alert-card.out{border-color:#F09595;background:#FFF5F5}
+.alert-icon{font-size:20px;flex-shrink:0}
+.alert-info{flex:1}
+.alert-name{font-size:12px;font-weight:600}
+.alert-detail{font-size:11px;color:var(--muted);margin-top:2px}
+.modal-bg{position:fixed;inset:0;background:rgba(44,31,16,0.5);z-index:300;display:flex;align-items:center;justify-content:center;padding:12px}
+.modal{background:#FDFAF4;border-radius:18px;padding:22px;width:100%;max-width:380px;max-height:90vh;overflow-y:auto;border:1px solid var(--border);position:relative}
+.modal-close{position:absolute;top:14px;right:14px;background:var(--cream2);border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;font-size:16px;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.modal h2{font-size:15px;font-weight:700;margin-bottom:14px}
+.field-label{font-size:11px;color:var(--muted);margin-top:10px;margin-bottom:3px}
+.modal input{width:100%;padding:9px 12px;border:1px solid #DDD0B8;border-radius:9px;font-size:12px;color:var(--text);background:#fff;font-family:inherit}
+.save-btn{width:100%;background:var(--gold);color:#fff;border:none;border-radius:10px;padding:12px;font-size:13px;font-weight:700;cursor:pointer;margin-top:14px;font-family:inherit}
+.sz-edit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px}
+.sz-edit-item label{font-size:10px;color:var(--muted);display:block;margin-bottom:3px}
+.sz-edit-item input{padding:6px 8px;font-size:12px}
+.sheets-link{display:inline-flex;align-items:center;gap:6px;background:var(--sky);border:1px solid #BDE0F5;border-radius:9px;padding:9px 14px;font-size:12px;color:#2A6F9A;text-decoration:none;font-weight:600;margin-bottom:16px}
+.refresh-btn{background:var(--gold-lt);border:1px solid var(--gold);border-radius:9px;padding:8px 14px;font-size:12px;color:var(--gold-dk);cursor:pointer;font-weight:600;font-family:inherit;margin-bottom:16px;margin-left:8px}
+.status-ok{font-size:12px;padding:8px 12px;border-radius:8px;margin-top:8px;background:#EAF3DE;color:#3B6D11;border:1px solid #97C459;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="login-screen" id="login-screen">
+  <div class="login-box">
+    <div class="login-logo"><span>Mágico<br>Amor ✦</span></div>
+    <h2>Panel de Agus</h2>
+    <p>Ingresá tu contraseña para acceder</p>
+    <input type="password" id="pwd-input" placeholder="••••••••" onkeydown="if(event.key==='Enter')checkPwd()">
+    <button class="login-btn" onclick="checkPwd()">Entrar</button>
+    <div class="login-err" id="login-err">Contraseña incorrecta</div>
+  </div>
+</div>
+
+<div id="panel" style="display:none">
+  <div class="header">
+    <div class="header-info">
+      <div class="title">⚙️ Panel de Agus — Mágico Amor</div>
+      <div class="sub">Stock en tiempo real desde Google Sheets</div>
+    </div>
+    <button class="logout-btn" onclick="logout()">Salir</button>
+  </div>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('stock',this)">📦 Stock</button>
+    <button class="tab" onclick="showTab('alertas',this)">⚠️ Alertas</button>
+  </div>
+
+  <div id="tab-stock">
+    <div class="content">
+      <div class="page-title">Estado del catálogo</div>
+      <div class="page-sub">Stock en tiempo real desde Google Sheets.</div>
+      <a class="sheets-link" href="https://docs.google.com/spreadsheets/d/1PN-4pOSI2eFwp4DzaOJjojEBoKGBWpgF-MQgP-OFsdY/edit" target="_blank">📊 Abrir Google Sheets</a>
+      <button class="refresh-btn" onclick="loadProducts()">🔄 Actualizar</button>
+      <div class="stats-grid" id="stats-grid"><div class="stat-card"><div class="spinner"></div></div></div>
+      <table class="prod-table">
+        <thead><tr><th>Producto</th><th>Precio</th><th>Stock por talle</th><th></th></tr></thead>
+        <tbody id="prod-tbody"><tr><td colspan="4" style="text-align:center;padding:24px"><div class="spinner"></div></td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="tab-alertas" style="display:none">
+    <div class="content">
+      <div class="page-title">Alertas de stock</div>
+      <div class="page-sub">Productos agotados o con poco stock.</div>
+      <div id="alertas-content"><div class="spinner"></div></div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-root"></div>
+
+<script>
+const API='https://script.google.com/macros/s/AKfycbyEIAfGBjqVfMUqh7CUs8nk6OCveMkeBLHILEs6ocBb2dF9JUleyR6tYC6FSy4niK8H/exec';
+const PASSWORD='magicoamor2024';
+let PRODUCTS=[];
+
+function checkPwd(){
+  if(document.getElementById('pwd-input').value===PASSWORD){
+    document.getElementById('login-screen').style.display='none';
+    document.getElementById('panel').style.display='block';
+    loadProducts();
+  }else{
+    document.getElementById('login-err').style.display='block';
+    document.getElementById('pwd-input').value='';
+  }
+}
+
+function logout(){
+  document.getElementById('login-screen').style.display='flex';
+  document.getElementById('panel').style.display='none';
+  document.getElementById('pwd-input').value='';
+}
+
+function showTab(name,btn){
+  document.getElementById('tab-stock').style.display=name==='stock'?'block':'none';
+  document.getElementById('tab-alertas').style.display=name==='alertas'?'block':'none';
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(name==='alertas')renderAlertas();
+}
+
+async function loadProducts(){
+  try{
+    const res=await fetch(API+'?action=getProducts');
+    const data=await res.json();
+    if(data.ok){PRODUCTS=data.products;renderStats();renderTable();}
+  }catch(e){
+    document.getElementById('prod-tbody').innerHTML='<tr><td colspan="4" style="text-align:center;padding:20px;color:#A32D2D;font-size:12px">Error al cargar. Verificá tu conexión.</td></tr>';
+  }
+}
+
+function renderStats(){
+  const total=PRODUCTS.length;
+  const agotados=PRODUCTS.filter(p=>Object.values(p.sizes).every(q=>q===0)).length;
+  const bajos=PRODUCTS.filter(p=>Object.values(p.sizes).some(q=>q>0&&q<=2)&&!Object.values(p.sizes).every(q=>q===0)).length;
+  document.getElementById('stats-grid').innerHTML=
+    '<div class="stat-card"><div class="stat-num">'+total+'</div><div class="stat-label">Productos totales</div></div>'
+    +'<div class="stat-card"><div class="stat-num" style="color:#3B6D11">'+(total-agotados)+'</div><div class="stat-label">Disponibles</div></div>'
+    +'<div class="stat-card"><div class="stat-num" style="color:#C47000">'+bajos+'</div><div class="stat-label">Stock bajo</div></div>'
+    +'<div class="stat-card"><div class="stat-num" style="color:#A32D2D">'+agotados+'</div><div class="stat-label">Agotados</div></div>';
+}
+
+function renderTable(){
+  document.getElementById('prod-tbody').innerHTML=PRODUCTS.map(p=>{
+    const szHTML=Object.entries(p.sizes).map(([s,q])=>'<span class="stock-pill'+(q===0?' out':q<=2?' low':'')+'">'+s+': '+q+'</span>').join('');
+    return'<tr><td><strong style="font-size:12px">'+p.emoji+' '+p.name+'</strong><br><span style="font-size:10px;color:var(--muted)">'+p.cat+'</span></td><td style="font-weight:700;color:var(--gold-dk)">$'+p.price.toLocaleString('es-AR')+'</td><td><div class="stock-cell">'+szHTML+'</div></td><td><button class="edit-btn" onclick="openEdit('+p.id+')">Editar</button></td></tr>';
+  }).join('');
+}
+
+function renderAlertas(){
+  const agotados=PRODUCTS.filter(p=>Object.values(p.sizes).every(q=>q===0));
+  const bajos=PRODUCTS.filter(p=>Object.values(p.sizes).some(q=>q>0&&q<=2)&&!Object.values(p.sizes).every(q=>q===0));
+  let html='';
+  if(!agotados.length&&!bajos.length){html='<div style="text-align:center;padding:40px;color:var(--muted);font-size:13px">✅ Todo el stock está en buen estado 💛</div>';}
+  agotados.forEach(p=>{html+='<div class="alert-card out"><div class="alert-icon">🚫</div><div class="alert-info"><div class="alert-name">'+p.emoji+' '+p.name+'</div><div class="alert-detail">Completamente agotado</div></div><button class="edit-btn" onclick="openEdit('+p.id+')">Editar</button></div>';});
+  bajos.forEach(p=>{const tb=Object.entries(p.sizes).filter(([,q])=>q>0&&q<=2).map(([s,q])=>s+': '+q).join(', ');html+='<div class="alert-card low"><div class="alert-icon">⚠️</div><div class="alert-info"><div class="alert-name">'+p.emoji+' '+p.name+'</div><div class="alert-detail">Stock bajo: '+tb+'</div></div><button class="edit-btn" onclick="openEdit('+p.id+')">Editar</button></div>';});
+  document.getElementById('alertas-content').innerHTML=html;
+}
+
+function openEdit(id){
+  const p=PRODUCTS.find(x=>x.id===id);
+  const szInputs=Object.entries(p.sizes).map(([s,q])=>'<div class="sz-edit-item"><label>Talle '+s+'</label><input type="number" min="0" id="sz-'+s+'" value="'+q+'"></div>').join('');
+  document.getElementById('modal-root').innerHTML=
+    '<div class="modal-bg" onclick="if(event.target===this)closeModal()">'
+    +'<div class="modal"><button class="modal-close" onclick="closeModal()">×</button>'
+    +'<h2>'+p.emoji+' '+p.name+'</h2>'
+    +'<div class="field-label">Precio</div><input type="number" id="edit-price" value="'+p.price+'">'
+    +'<div class="field-label">Stock por talle</div>'
+    +'<div class="sz-edit-grid">'+szInputs+'</div>'
+    +'<div style="font-size:11px;color:var(--muted);margin-top:10px;padding:8px;background:var(--sky);border-radius:8px">💡 También podés editar en <a href="https://docs.google.com/spreadsheets/d/1PN-4pOSI2eFwp4DzaOJjojEBoKGBWpgF-MQgP-OFsdY/edit" target="_blank" style="color:#2A6F9A">Google Sheets</a></div>'
+    +'<button class="save-btn" onclick="saveEdit('+p.id+','+p.rowIndex+')">💾 Guardar cambios</button>'
+    +'</div></div>';
+}
+
+async function saveEdit(id,rowIndex){
+  const p=PRODUCTS.find(x=>x.id===id);
+  const newSizes={};
+  Object.keys(p.sizes).forEach(s=>{newSizes[s]=parseInt(document.getElementById('sz-'+s)?.value)||0;});
+  const newPrice=parseFloat(document.getElementById('edit-price').value)||p.price;
+  const items=Object.entries(newSizes).map(([size,newQty])=>({rowIndex,size,qty:(p.sizes[size]||0)-newQty})).filter(x=>x.qty!==0);
+  try{
+    if(items.length)await fetch(API,{method:'POST',body:JSON.stringify({action:'updateStock',items})});
+    p.sizes=newSizes;p.price=newPrice;
+    closeModal();renderStats();renderTable();
+    const st=document.createElement('div');st.className='status-ok';st.textContent='✓ Cambios guardados correctamente';
+    document.querySelector('.content').prepend(st);setTimeout(()=>st.remove(),3000);
+  }catch(e){alert('Error al guardar. Editá en Google Sheets.');}
+}
+
+function closeModal(){document.getElementById('modal-root').innerHTML='';}
+</script>
+</body>
+</html>
