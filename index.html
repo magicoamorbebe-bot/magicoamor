@@ -59,7 +59,7 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--cream);colo
 .spinner{width:36px;height:36px;border:3px solid var(--gold-lt);border-top-color:var(--gold);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 12px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-wrap{grid-column:1/-1;text-align:center;padding:60px 20px}
-.whatsapp-fab{position:fixed;bottom:84px;right:20px;z-index:201;background:#25D366;color:#fff;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none}
+.whatsapp-fab{position:fixed;bottom:20px;right:20px;z-index:201;background:#25D366;color:#fff;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);text-decoration:none}
 .chat-fab{position:fixed;bottom:20px;right:20px;width:54px;height:54px;border-radius:50%;background:var(--gold);color:#fff;border:none;cursor:pointer;font-size:22px;box-shadow:0 4px 20px rgba(201,160,64,0.5);z-index:200;display:flex;align-items:center;justify-content:center}
 .chat-popup{position:fixed;bottom:84px;right:20px;width:300px;background:#FDFAF4;border:1px solid var(--border);border-radius:18px;box-shadow:0 8px 32px rgba(44,31,16,0.18);z-index:200;display:none;flex-direction:column;overflow:hidden;max-height:420px}
 .chat-popup.open{display:flex}
@@ -396,20 +396,7 @@ SECCIÓN EXPERIENCIAS (al final del catálogo)
 <button onclick="openCartModal()">🧺 Canastita <span class="cart-count-badge" id="cart-count">0</span></button>
 </div>
 
-<button class="chat-fab" onclick="toggleChat()">💬</button>
-<div class="chat-popup" id="chat-popup">
-<div class="chat-header">
-<span>✦ Consultá con Agus</span>
-<button class="chat-close-btn" onclick="toggleChat()">×</button>
-</div>
-<div class="messages" id="chat-msgs">
-<div class="msg bot">¡Hola! Soy el asistente de Mágico Amor 💛 Preguntame sobre talles, materiales, cuidado de la ropita o la valija de maternidad.</div>
-</div>
-<div class="chat-input-area">
-<input id="chat-in" placeholder="Escribí tu consulta..." onkeydown="if(event.key==='Enter')sendChat()">
-<button onclick="sendChat()">➤</button>
-</div>
-</div>
+<!-- Chatbot desactivado -->
 
 <div id="modal-root"></div>
 
