@@ -1,0 +1,2082 @@
+{
+  "version": 2,
+  "generated_from": "Google Apps Script getProducts",
+  "images": {
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_i8lsvji8lsvji8ls.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_i8lsvji8lsvji8ls.png",
+      "card": "catalogo-fotos/piloto/derivados/d5269d863e82-gemini-generated-image-i8lsvji8lsvji8ls-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/d5269d863e82-gemini-generated-image-i8lsvji8lsvji8ls-gallery.webp",
+      "original_sha256": "1f12b73f92e1668722a9ec73f0ea0671865e0549d1b13040533ac119cc9fcbc9"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_7zt9n17zt9n17zt9.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_7zt9n17zt9n17zt9.png",
+      "card": "catalogo-fotos/piloto/derivados/2bcae47e44de-gemini-generated-image-7zt9n17zt9n17zt9-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/2bcae47e44de-gemini-generated-image-7zt9n17zt9n17zt9-gallery.webp",
+      "original_sha256": "d1c4043a99e463f8b00a44bd3f5df3a6e07d11ff26061e3f06c932a345de5e32"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_bzek26bzek26bzek.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_bzek26bzek26bzek.png",
+      "card": "catalogo-fotos/piloto/derivados/77fef582f171-gemini-generated-image-bzek26bzek26bzek-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/77fef582f171-gemini-generated-image-bzek26bzek26bzek-gallery.webp",
+      "original_sha256": "9ecb1af7d954434033b2a02a2c32b1dd829efc074f4894b60d89de43ba0ea9a7"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_r72g0cr72g0cr72g%20(1).png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_r72g0cr72g0cr72g (1).png",
+      "card": "catalogo-fotos/piloto/derivados/f181f1e3afe0-gemini-generated-image-r72g0cr72g0cr72g-1-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/f181f1e3afe0-gemini-generated-image-r72g0cr72g0cr72g-1-gallery.webp",
+      "original_sha256": "34f63683d64d7443f03f82248ad220ba3c4c69b2f797f339950b409e35d3584b"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Algod%C3%B3n%20Liso%20-%20Blanco.png?raw=true": {
+      "original_file": "imagenes/Pantalón Algodón Liso - Blanco.png",
+      "card": "catalogo-fotos/piloto/derivados/44ccd98aae77-pantalon-algodon-liso-blanco-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/44ccd98aae77-pantalon-algodon-liso-blanco-gallery.webp",
+      "original_sha256": "48d646616fb5b5d86fefaaa616fc6be686526ca71b63e5be5ac340d67a76118e"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Gemini_Generated_Image_oxog3zoxog3zoxog.jpg?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_oxog3zoxog3zoxog.jpg",
+      "card": "catalogo-fotos/piloto/derivados/23af204b8558-gemini-generated-image-oxog3zoxog3zoxog-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/23af204b8558-gemini-generated-image-oxog3zoxog3zoxog-gallery.webp",
+      "original_sha256": "2993f8fda38b04e5dd5912b33f492585027c98668ce4ae21810695a5b7d80252"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Gemini_Generated_Image_3flzv73flzv73flz.jpg?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_3flzv73flzv73flz.jpg",
+      "card": "catalogo-fotos/piloto/derivados/de98aed1c6ba-gemini-generated-image-3flzv73flzv73flz-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/de98aed1c6ba-gemini-generated-image-3flzv73flzv73flz-gallery.webp",
+      "original_sha256": "dcca8c97ef49864d1121dbf22a4072f52e6370414b02d5607a4ea8aa3b96f911"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/sandy%20aqua.jpeg?raw=true": {
+      "original_file": "imagenes/sandy aqua.jpeg",
+      "original_sha256": "b0803c2af0b9973eae50493879833b829238ecd120b55bd3ccb74a1906f55e59",
+      "card": "catalogo-fotos/derivados/8b91ac8e5049-sandy-aqua-card.webp",
+      "gallery": "catalogo-fotos/derivados/8b91ac8e5049-sandy-aqua-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Azul%20%20(2).png?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Azul  (2).png",
+      "card": "catalogo-fotos/piloto/derivados/18262be70019-enterito-algodon-frisa-azul-2-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/18262be70019-enterito-algodon-frisa-azul-2-gallery.webp",
+      "original_sha256": "4a6662612c7520e56ca5fd5e9c5c46e7c9472d9c1ea18d1f85f0173509ed4ad4"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20pupi%20%20(3).png?raw=true": {
+      "original_file": "imagenes/Conjunto pupi  (3).png",
+      "card": "catalogo-fotos/piloto/derivados/859f1b6f441b-conjunto-pupi-3-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/859f1b6f441b-conjunto-pupi-3-gallery.webp",
+      "original_sha256": "ebc6a6fcf22504c00d9d0c17ffd992cda9c24b2043dba4454a71cd8257b97f2a"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_1rnlha1rnlha1rnl.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_1rnlha1rnlha1rnl.png",
+      "card": "catalogo-fotos/piloto/derivados/06ce06823b8a-gemini-generated-image-1rnlha1rnlha1rnl-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/06ce06823b8a-gemini-generated-image-1rnlha1rnlha1rnl-gallery.webp",
+      "original_sha256": "b9579bc7d1a54bb3c5b19316600edcfb4a31bc7b434e4f08864feff461bc03e5"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_h1qbqbh1qbqbh1qb.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_h1qbqbh1qbqbh1qb.png",
+      "card": "catalogo-fotos/piloto/derivados/069580aa9ecd-gemini-generated-image-h1qbqbh1qbqbh1qb-card.webp",
+      "gallery": "catalogo-fotos/piloto/derivados/069580aa9ecd-gemini-generated-image-h1qbqbh1qbqbh1qb-gallery.webp",
+      "original_sha256": "44bc2219a19fab390ac09bec4429fd7f7343f400f9f0cf332d4bc3c6abe74cda"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Buzo%20Serena%20-%20Rosa%20(2).webp?raw=true": {
+      "original_file": "Buzo Serena - Rosa (2).webp",
+      "original_sha256": "30e0b6d5c4ed8867336c7e77840882dfc9636e4e3580bb32d70d2321040e0c3b",
+      "card": "catalogo-fotos/derivados/c3ce4380def9-buzo-serena-rosa-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/c3ce4380def9-buzo-serena-rosa-2-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Azul%20%20(1).png?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Azul  (1).png",
+      "original_sha256": "39eb1fee6438065f4550205a8766b9ed734500eb867cefa767ac046871f0d098",
+      "card": "catalogo-fotos/derivados/af24a309dd8c-enterito-algodon-frisa-azul-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/af24a309dd8c-enterito-algodon-frisa-azul-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Azul%20%20(1).webp?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Azul  (1).webp",
+      "original_sha256": "262e98f91e41488bf9e76a33b0835a14b99ceb3e0c70d745248ae8ac1a6d8a66",
+      "card": "catalogo-fotos/derivados/f49bcb03c618-enterito-algodon-frisa-azul-1-card.webp",
+      "gallery": "Enterito Algodón Frisa - Azul  (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Beige%20(1).webp?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Beige (1).webp",
+      "original_sha256": "676df1726018024cfcdc30864a393c3d2775bdcff7e4d90160d603e392f8dd19",
+      "card": "catalogo-fotos/derivados/ad27b05037a5-enterito-algodon-frisa-beige-1-card.webp",
+      "gallery": "Enterito Algodón Frisa - Beige (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Beige%20(2).webp?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Beige (2).webp",
+      "original_sha256": "9f5b25839428ed9769d24ccf6006ad4ef265a0475a6ff4e110adf266f9b86961",
+      "card": "catalogo-fotos/derivados/2253d9b44d8e-enterito-algodon-frisa-beige-2-card.webp",
+      "gallery": "Enterito Algodón Frisa - Beige (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Beige%20(3).webp?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Beige (3).webp",
+      "original_sha256": "3baafa1a9bc82f1f7770fffa06c0c78643418c5c0ffda4a08e8b4d4e013f5652",
+      "card": "catalogo-fotos/derivados/e979b3838c21-enterito-algodon-frisa-beige-3-card.webp",
+      "gallery": "catalogo-fotos/derivados/e979b3838c21-enterito-algodon-frisa-beige-3-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Gris%20(1).webp?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Gris (1).webp",
+      "original_sha256": "1a0f6fee9a848b04d7f5fe1a153caa9450fc11bf8a9569c19b78863ff7a75e28",
+      "card": "catalogo-fotos/derivados/f67f86209ba5-enterito-algodon-frisa-gris-1-card.webp",
+      "gallery": "Enterito Algodón Frisa - Gris (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Gris%20(2).webp?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Gris (2).webp",
+      "original_sha256": "e908c4fcd76344063b68208280fcb9dabf765aa4e77eb6078c1f58286b8950cd",
+      "card": "catalogo-fotos/derivados/a7647b638df8-enterito-algodon-frisa-gris-2-card.webp",
+      "gallery": "Enterito Algodón Frisa - Gris (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Enterito%20Algod%C3%B3n%20Frisa%20-%20Gris%20(3).webp?raw=true": {
+      "original_file": "Enterito Algodón Frisa - Gris (3).webp",
+      "original_sha256": "ddd4975324d53294a02e7d2f452e0181227c043bb4e815a2c401ab88129b4f44",
+      "card": "catalogo-fotos/derivados/596280419ce5-enterito-algodon-frisa-gris-3-card.webp",
+      "gallery": "catalogo-fotos/derivados/596280419ce5-enterito-algodon-frisa-gris-3-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/Gemini_Generated_Image_hfo2euhfo2euhfo2.png?raw=true": {
+      "original_file": "Gemini_Generated_Image_hfo2euhfo2euhfo2.png",
+      "original_sha256": "e17d3469caf79abac949a041a7abd197edba08966c0eb812cd09a329ab84b1d4",
+      "card": "catalogo-fotos/derivados/1bb5c9ab45a8-gemini-generated-image-hfo2euhfo2euhfo2-card.webp",
+      "gallery": "catalogo-fotos/derivados/1bb5c9ab45a8-gemini-generated-image-hfo2euhfo2euhfo2-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Doris%20Happy.png?raw=true": {
+      "original_file": "imagenes/Body Doris Happy.png",
+      "original_sha256": "40284d37df5bc4fe04763a872d68a0f87d519c5e7ba8cf206f26fa46b0ea8e1d",
+      "card": "catalogo-fotos/derivados/9cefa90e968f-body-doris-happy-card.webp",
+      "gallery": "catalogo-fotos/derivados/9cefa90e968f-body-doris-happy-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20doris.jpg?raw=true": {
+      "original_file": "imagenes/Body doris.jpg",
+      "original_sha256": "6d3e76db286d0cffcfce6e17e5d77f65dc50aa7d1b90244ed0d67d88a87e1f89",
+      "card": "catalogo-fotos/derivados/7173c1e32d6f-body-doris-card.webp",
+      "gallery": "catalogo-fotos/derivados/7173c1e32d6f-body-doris-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20osi%20rosa%20(1).jpg?raw=true": {
+      "original_file": "imagenes/Body osi rosa (1).jpg",
+      "original_sha256": "c763bae73c22d712f59a86dce67365e79c236affb6e6f1d03b1f8cfe9648b7a3",
+      "card": "catalogo-fotos/derivados/c57b91daba05-body-osi-rosa-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/c57b91daba05-body-osi-rosa-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20osi%20rosa%20(2).jpg?raw=true": {
+      "original_file": "imagenes/Body osi rosa (2).jpg",
+      "original_sha256": "8fd5abe83806c799d72e0197531962d35748ce5c36d27247d567cf84ac07f949",
+      "card": "catalogo-fotos/derivados/8ec8955c15c0-body-osi-rosa-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/8ec8955c15c0-body-osi-rosa-2-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Buzo%20Frisa%20Osito.png?raw=true": {
+      "original_file": "imagenes/Buzo Frisa Osito.png",
+      "original_sha256": "0e7ddfa8f8018d933a9261fd65f5779e746afbfc0e521eb8c7ecaf7f02fc347e",
+      "card": "catalogo-fotos/derivados/c241fa08ff46-buzo-frisa-osito-card.webp",
+      "gallery": "catalogo-fotos/derivados/c241fa08ff46-buzo-frisa-osito-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Buzo%20Frisa%20Osito.webp?raw=true": {
+      "original_file": "imagenes/Buzo Frisa Osito.webp",
+      "original_sha256": "961631513154a8c6dc9d3ab3495e3483d47765f7f6255d1a0e7ff959716dcb5b",
+      "card": "catalogo-fotos/derivados/10f69c3d1d5f-buzo-frisa-osito-card.webp",
+      "gallery": "imagenes/Buzo Frisa Osito.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Buzo%20Serena%20-%20Rosa%20(1).webp?raw=true": {
+      "original_file": "imagenes/Buzo Serena - Rosa (1).webp",
+      "original_sha256": "80b7472e1a87f1c388864158914bfe402a38a9da967b731137434b489afbb4e0",
+      "card": "catalogo-fotos/derivados/f11c5d02d57e-buzo-serena-rosa-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/f11c5d02d57e-buzo-serena-rosa-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Buzo%20Taylor%20Aero%20(1).webp?raw=true": {
+      "original_file": "imagenes/Buzo Taylor Aero (1).webp",
+      "original_sha256": "a28b0aba297506d9d31804431d0d27b43032f7859a2dc13012b5c7e3c73133b1",
+      "card": "catalogo-fotos/derivados/77812000f354-buzo-taylor-aero-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/77812000f354-buzo-taylor-aero-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Buzo%20Taylor%20Aero%20(2).webp?raw=true": {
+      "original_file": "imagenes/Buzo Taylor Aero (2).webp",
+      "original_sha256": "b422b66a2eeeb1d7c5249fa8080624e791051168c490696bca018dd3718df0dd",
+      "card": "catalogo-fotos/derivados/787f76fbd674-buzo-taylor-aero-2-card.webp",
+      "gallery": "imagenes/Buzo Taylor Aero (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Buzo%20Taylor%20Gris%20(1).webp?raw=true": {
+      "original_file": "imagenes/Buzo Taylor Gris (1).webp",
+      "original_sha256": "47a7157e217f16be4c79f285fbe0e7a67652c84f32dad5dc2ce13e253c390433",
+      "card": "catalogo-fotos/derivados/7c84c83d3f5c-buzo-taylor-gris-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/7c84c83d3f5c-buzo-taylor-gris-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Buzo%20Taylor%20Gris%20(2).webp?raw=true": {
+      "original_file": "imagenes/Buzo Taylor Gris (2).webp",
+      "original_sha256": "9dd08995717abaa3e59012ef99b75604d15e21fa0147baeeb5e911e4483c82a6",
+      "card": "catalogo-fotos/derivados/e85b60b77b3b-buzo-taylor-gris-2-card.webp",
+      "gallery": "imagenes/Buzo Taylor Gris (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Campera%20Serena%20Rosa%20(1).webp?raw=true": {
+      "original_file": "imagenes/Campera Serena Rosa (1).webp",
+      "original_sha256": "ff1ebf7b8ee81ce61a5e61b6ceb4ecfc8a772baed5e733223a0fbd3bb5b3bdfb",
+      "card": "catalogo-fotos/derivados/c796c2745949-campera-serena-rosa-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/c796c2745949-campera-serena-rosa-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Campera%20Serena%20Rosa%20(2).webp?raw=true": {
+      "original_file": "imagenes/Campera Serena Rosa (2).webp",
+      "original_sha256": "aa9a1957e46e3043216eedf88ccc17d5b74668dde1db28217a0b10606857631f",
+      "card": "catalogo-fotos/derivados/e2a86b04be86-campera-serena-rosa-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/e2a86b04be86-campera-serena-rosa-2-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Plush%20Kenzo%20-%20Aqua%20(1).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Kenzo - Aqua (1).webp",
+      "original_sha256": "05a942cb097f3683a826d6703531546ea849b33e355c404cddca12f93076b5fb",
+      "card": "catalogo-fotos/derivados/a4b1f5806de9-conjunto-plush-kenzo-aqua-1-card.webp",
+      "gallery": "imagenes/Conjunto Plush Kenzo - Aqua (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Plush%20Kenzo%20-%20Aqua%20(2).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Kenzo - Aqua (2).webp",
+      "original_sha256": "0b3133a695a4ad2494d3c7aa229bfed73efcb9814607f6bd7ff9c0b627a3f482",
+      "card": "catalogo-fotos/derivados/03b8ee049fc9-conjunto-plush-kenzo-aqua-2-card.webp",
+      "gallery": "imagenes/Conjunto Plush Kenzo - Aqua (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Plush%20Kenzo%20-%20Beige%20(1).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Kenzo - Beige (1).webp",
+      "original_sha256": "645f65731de82edc2b73d5e9630a160ad1f0b83a732248e814580416ed4b2d15",
+      "card": "imagenes/Conjunto Plush Kenzo - Beige (1).webp",
+      "gallery": "imagenes/Conjunto Plush Kenzo - Beige (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Plush%20Kenzo%20-%20Beige%20(2).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Kenzo - Beige (2).webp",
+      "original_sha256": "68883d517c6d83293974f0d454e1e9661ce55d0e7a544785bd4fdbd8c3d0a4f7",
+      "card": "imagenes/Conjunto Plush Kenzo - Beige (2).webp",
+      "gallery": "imagenes/Conjunto Plush Kenzo - Beige (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Plush%20Kenzo%20-%20Rosa%20(1).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Kenzo - Rosa (1).webp",
+      "original_sha256": "d70e558e1bfc7a830c064ece0a9a9771c01a5f842859a128b0dd687dfea7404c",
+      "card": "imagenes/Conjunto Plush Kenzo - Rosa (1).webp",
+      "gallery": "imagenes/Conjunto Plush Kenzo - Rosa (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Plush%20Kenzo%20-%20Rosa%20(2).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Kenzo - Rosa (2).webp",
+      "original_sha256": "c3075b3826ba6672114ffac04cb5c1b3f4fc84eb48f73f02b982e46a13765b81",
+      "card": "catalogo-fotos/derivados/110fbfcb1cf6-conjunto-plush-kenzo-rosa-2-card.webp",
+      "gallery": "imagenes/Conjunto Plush Kenzo - Rosa (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20pupi%20%20(1).png?raw=true": {
+      "original_file": "imagenes/Conjunto pupi  (1).png",
+      "original_sha256": "19d1b3cd82f8d2ffd2f0eef1682eb50918d213120b002cd67c411d7223800eb1",
+      "card": "catalogo-fotos/derivados/ae9559ceb2ed-conjunto-pupi-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/ae9559ceb2ed-conjunto-pupi-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20pupi%20%20(2).png?raw=true": {
+      "original_file": "imagenes/Conjunto pupi  (2).png",
+      "original_sha256": "c9e06d22df41ec6f2f518774596cd68c32ea7daf0735f5d9cb51e08f04fda9d0",
+      "card": "catalogo-fotos/derivados/a098ae28ca77-conjunto-pupi-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/a098ae28ca77-conjunto-pupi-2-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Enterito%20Algod%C3%B3n%20Osito%20-%20Natural.png?raw=true": {
+      "original_file": "imagenes/Enterito Algodón Osito - Natural.png",
+      "original_sha256": "74966c4beb2c028e0a41bb50eef2adfbd094883c074a07a9bf270b63d04e1b5f",
+      "card": "catalogo-fotos/derivados/edd87356db5b-enterito-algodon-osito-natural-card.webp",
+      "gallery": "catalogo-fotos/derivados/edd87356db5b-enterito-algodon-osito-natural-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Enterito%20Fiama%20(1).png?raw=true": {
+      "original_file": "imagenes/Enterito Fiama (1).png",
+      "original_sha256": "a25ab97717957f63def41aa084172f61fb5ed0b883299ad304d0f5ad023d7181",
+      "card": "catalogo-fotos/derivados/66b33b71cc8e-enterito-fiama-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/66b33b71cc8e-enterito-fiama-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Enterito%20Fiama%20(1).webp?raw=true": {
+      "original_file": "imagenes/Enterito Fiama (1).webp",
+      "original_sha256": "da5fd614e0a59df2a731dd5b1570e2dfa9e50e20321b1f79f33f2967b43d8bc4",
+      "card": "catalogo-fotos/derivados/c8b2d46c3092-enterito-fiama-1-card.webp",
+      "gallery": "imagenes/Enterito Fiama (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Enterito%20Fiama%20(2).webp?raw=true": {
+      "original_file": "imagenes/Enterito Fiama (2).webp",
+      "original_sha256": "5ace61478d172edd55b570d2facc94e1ed65520b926c0c836cfc8dafda2e5e75",
+      "card": "catalogo-fotos/derivados/e943a43644c0-enterito-fiama-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/e943a43644c0-enterito-fiama-2-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Enterito%20Plush%20Aqua.png?raw=true": {
+      "original_file": "imagenes/Enterito Plush Aqua.png",
+      "original_sha256": "946af3211e88e7171f7bdc43c0bbe84cd01f68da3b56dc727084d17cbbc529ba",
+      "card": "catalogo-fotos/derivados/85850a3c8cbc-enterito-plush-aqua-card.webp",
+      "gallery": "catalogo-fotos/derivados/85850a3c8cbc-enterito-plush-aqua-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Gemini_Generated_Image_5adtbo5adtbo5adt.jpg?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_5adtbo5adtbo5adt.jpg",
+      "original_sha256": "cd7977123b1f6ee8f96c0524b25b0e45de17e638fc60020016ba4cb941dd0c5e",
+      "card": "catalogo-fotos/derivados/3e55da2c8d89-gemini-generated-image-5adtbo5adtbo5adt-card.webp",
+      "gallery": "catalogo-fotos/derivados/3e55da2c8d89-gemini-generated-image-5adtbo5adtbo5adt-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Gemini_Generated_Image_aau1p7aau1p7aau1.jpg?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_aau1p7aau1p7aau1.jpg",
+      "original_sha256": "cf3088d5e2f9985cc8aa24ab2a198de22856ea5aa1841cbb58c850547bbc1d1d",
+      "card": "catalogo-fotos/derivados/36a370aeb3e0-gemini-generated-image-aau1p7aau1p7aau1-card.webp",
+      "gallery": "catalogo-fotos/derivados/36a370aeb3e0-gemini-generated-image-aau1p7aau1p7aau1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Gemini_Generated_Image_n8twodn8twodn8tw.jpg?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_n8twodn8twodn8tw.jpg",
+      "original_sha256": "80bab311be81aa1b035d93959687d06e2f34920133c07c365f22aa0dc83ffd63",
+      "card": "catalogo-fotos/derivados/629837f91ca0-gemini-generated-image-n8twodn8twodn8tw-card.webp",
+      "gallery": "catalogo-fotos/derivados/629837f91ca0-gemini-generated-image-n8twodn8twodn8tw-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Gemini_Generated_Image_qm7w99qm7w99qm7w.jpg?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_qm7w99qm7w99qm7w.jpg",
+      "original_sha256": "e68185c8a5e53f48ab89be4ad6aea8daca97b22605e449b324e39408e5509f09",
+      "card": "catalogo-fotos/derivados/5386387486cd-gemini-generated-image-qm7w99qm7w99qm7w-card.webp",
+      "gallery": "catalogo-fotos/derivados/5386387486cd-gemini-generated-image-qm7w99qm7w99qm7w-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Algod%C3%B3n%20-%20Gris%20Melange.jpeg?raw=true": {
+      "original_file": "imagenes/Pantalón Algodón - Gris Melange.jpeg",
+      "original_sha256": "c0ad231d2cf79e6be3233427eeccfb8a3925dbfa66ce5d87a10381024bff397e",
+      "card": "catalogo-fotos/derivados/b2763cd41144-pantalon-algodon-gris-melange-card.webp",
+      "gallery": "catalogo-fotos/derivados/b2763cd41144-pantalon-algodon-gris-melange-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Estampado.jpeg?raw=true": {
+      "original_file": "imagenes/Pantalón Estampado.jpeg",
+      "original_sha256": "f9212d5e6cb2e37b29a606e26aa1db747c9a9903c2b066c5c253eebe2fb43962",
+      "card": "catalogo-fotos/derivados/7d74dfa5ac25-pantalon-estampado-card.webp",
+      "gallery": "catalogo-fotos/derivados/7d74dfa5ac25-pantalon-estampado-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Frisa%20Gris%20Melange.webp?raw=true": {
+      "original_file": "imagenes/Pantalón Frisa Gris Melange.webp",
+      "original_sha256": "65c4db7bde25698ea4b076ad8a80e4cee11651b39560df67299f28611bdc1d7b",
+      "card": "catalogo-fotos/derivados/5ed92e9c2c4b-pantalon-frisa-gris-melange-card.webp",
+      "gallery": "imagenes/Pantalón Frisa Gris Melange.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Natural.jpeg?raw=true": {
+      "original_file": "imagenes/Pantalón Natural.jpeg",
+      "original_sha256": "41d5a89a6d32e54edb69991a39f164e335fe8dda78b4ec8cc5b58bdf536b1fc3",
+      "card": "catalogo-fotos/derivados/3bc35f44b253-pantalon-natural-card.webp",
+      "gallery": "catalogo-fotos/derivados/3bc35f44b253-pantalon-natural-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Rosa%20Chicle%20T1.jpeg?raw=true": {
+      "original_file": "imagenes/Pantalón Rosa Chicle T1.jpeg",
+      "original_sha256": "737747ae617848959cc3ac20d83a05c683842b3306642accfa559674f301b6e2",
+      "card": "catalogo-fotos/derivados/2f551c189bc9-pantalon-rosa-chicle-t1-card.webp",
+      "gallery": "catalogo-fotos/derivados/2f551c189bc9-pantalon-rosa-chicle-t1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Rosa%20Claro%20T0.jpeg?raw=true": {
+      "original_file": "imagenes/Pantalón Rosa Claro T0.jpeg",
+      "original_sha256": "e0585115382ea3259f1b19ed46e90a9eb5b531e523188a36227894a3ed94b578",
+      "card": "catalogo-fotos/derivados/3b0f3daa9ad9-pantalon-rosa-claro-t0-card.webp",
+      "gallery": "catalogo-fotos/derivados/3b0f3daa9ad9-pantalon-rosa-claro-t0-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Pantal%C3%B3n%20Rosa%20T3.jpeg?raw=true": {
+      "original_file": "imagenes/Pantalón Rosa T3.jpeg",
+      "original_sha256": "6cde1ccd6c8385a7b41a1743c649628a607577047bef0317da3b112181e287fe",
+      "card": "catalogo-fotos/derivados/8046ab2d6a93-pantalon-rosa-t3-card.webp",
+      "gallery": "catalogo-fotos/derivados/8046ab2d6a93-pantalon-rosa-t3-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Set%206%20piezas%20%20(1).png?raw=true": {
+      "original_file": "imagenes/Set 6 piezas  (1).png",
+      "original_sha256": "d03c382e8086d2ee88f75a69758694db632de0cd9d05bdfe5a7845ada366771c",
+      "card": "catalogo-fotos/derivados/2da3e72a4b22-set-6-piezas-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/2da3e72a4b22-set-6-piezas-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Set%206%20piezas%20%20(1).webp?raw=true": {
+      "original_file": "imagenes/Set 6 piezas  (1).webp",
+      "original_sha256": "3348d5059abdfbd5707efc24c8ca45e8ef84f934279eaac48b538fd0d112cef0",
+      "card": "catalogo-fotos/derivados/aede3e074bb6-set-6-piezas-1-card.webp",
+      "gallery": "imagenes/Set 6 piezas  (1).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Set%206%20piezas%20%20(2).webp?raw=true": {
+      "original_file": "imagenes/Set 6 piezas  (2).webp",
+      "original_sha256": "1fada4d397b9de6c211e9d4da070f5345d9ab8b1b070ad5ae93e7e122c739055",
+      "card": "catalogo-fotos/derivados/fa5cc5cd29db-set-6-piezas-2-card.webp",
+      "gallery": "imagenes/Set 6 piezas  (2).webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/WhatsApp%20Image%202026-08-31%20at%2011.36.27%20(1).jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-08-31 at 11.36.27 (1).jpeg",
+      "original_sha256": "1a28d4abf9e889f3fdd8b2a92a00793e2179bfeb436d5d30b313ca186a06e543",
+      "card": "catalogo-fotos/derivados/890f3b1ddbe7-whatsapp-image-2026-08-31-at-11-36-27-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/890f3b1ddbe7-whatsapp-image-2026-08-31-at-11-36-27-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/WhatsApp%20Image%202026-08-31%20at%2011.36.28%20(1).jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-08-31 at 11.36.28 (1).jpeg",
+      "original_sha256": "a5209c936137bc44f7a5661de9e01f488e2ecbf7ebaf877231b4b235c842b707",
+      "card": "catalogo-fotos/derivados/4bdf3a276632-whatsapp-image-2026-08-31-at-11-36-28-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/4bdf3a276632-whatsapp-image-2026-08-31-at-11-36-28-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/WhatsApp%20Image%202026-08-31%20at%2011.36.32%20(1).jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-08-31 at 11.36.32 (1).jpeg",
+      "original_sha256": "b9a2bb9015976f098d6d7ac366f0c74cc0587489c8ff7b71e2ca7fa5ce52a8e2",
+      "card": "catalogo-fotos/derivados/a3b33a32918f-whatsapp-image-2026-08-31-at-11-36-32-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/a3b33a32918f-whatsapp-image-2026-08-31-at-11-36-32-1-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/WhatsApp%20Image%202026-08-31%20at%2014.07.34.jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-08-31 at 14.07.34.jpeg",
+      "original_sha256": "21d4fe7cd8cb14343ea6c3c55440f0fb60b3a9abcf6d8709744695eda9b568de",
+      "card": "catalogo-fotos/derivados/ce48c2f4775b-whatsapp-image-2026-08-31-at-14-07-34-card.webp",
+      "gallery": "catalogo-fotos/derivados/ce48c2f4775b-whatsapp-image-2026-08-31-at-14-07-34-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/bodyboton4-87400e1056e6804db617791146014088-640-0.webp?raw=true": {
+      "original_file": "imagenes/bodyboton4-87400e1056e6804db617791146014088-640-0.webp",
+      "original_sha256": "76f89cc7e94d9c99fa6664de3504842eb200be215cf77409e1b8235fe4a33fcb",
+      "card": "catalogo-fotos/derivados/c2ad1a39a62c-bodyboton4-87400e1056e6804db617791146014088-640-0-card.webp",
+      "gallery": "imagenes/bodyboton4-87400e1056e6804db617791146014088-640-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3406_orq-0d6c725141a66b425d17525206443397-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/3406_orq-0d6c725141a66b425d17525206443397-1024-1024.webp",
+      "original_sha256": "466694b6fe11974782895f18c3a389a664bece992b8c67a78951513f7e66450b",
+      "card": "catalogo-fotos/derivados/09a9e9bcde7e-3406-orq-0d6c725141a66b425d17525206443397-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/09a9e9bcde7e-3406-orq-0d6c725141a66b425d17525206443397-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3446b_aqua-9cbcc9dc2018d56c3a17521542252448-480-0.webp?raw=true": {
+      "original_file": "imagenes/3446b_aqua-9cbcc9dc2018d56c3a17521542252448-480-0.webp",
+      "original_sha256": "064ae9c4e58195cda524137ec52bc5764cdffb0bf5b24c75ead0de1523145fce",
+      "card": "catalogo-fotos/derivados/dc4a5e5a533d-3446b-aqua-9cbcc9dc2018d56c3a17521542252448-480-0-card.webp",
+      "gallery": "imagenes/3446b_aqua-9cbcc9dc2018d56c3a17521542252448-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3446b_bge-912343b496beeaa4a017521542193003-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/3446b_bge-912343b496beeaa4a017521542193003-1024-1024.webp",
+      "original_sha256": "90167fd31970a819d1cc76b8db7b02b5aa0ad293e22803d3c643d532e96c2fc0",
+      "card": "catalogo-fotos/derivados/ba3c02ea4cfc-3446b-bge-912343b496beeaa4a017521542193003-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/ba3c02ea4cfc-3446b-bge-912343b496beeaa4a017521542193003-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3446b_rs-0c5ddc84bc515f1e5c17521542253047-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/3446b_rs-0c5ddc84bc515f1e5c17521542253047-1024-1024.webp",
+      "original_sha256": "7a0548221f8854da4ba8f747f546ddb21c724069a57edbaf593d63765846659b",
+      "card": "catalogo-fotos/derivados/0b7420318a26-3446b-rs-0c5ddc84bc515f1e5c17521542253047-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/0b7420318a26-3446b-rs-0c5ddc84bc515f1e5c17521542253047-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3471_nt-0b26185bb803157e8117721978105566-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/3471_nt-0b26185bb803157e8117721978105566-1024-1024.webp",
+      "original_sha256": "1959a39d724cce4fe5795cf70ec64b7cf3ed4a91bf662f2bf66ca9620440abdf",
+      "card": "catalogo-fotos/derivados/448651ffed56-3471-nt-0b26185bb803157e8117721978105566-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/448651ffed56-3471-nt-0b26185bb803157e8117721978105566-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3480-adf18972bdbfb900e517721363933904-480-0.webp?raw=true": {
+      "original_file": "imagenes/3480-adf18972bdbfb900e517721363933904-480-0.webp",
+      "original_sha256": "072b2513b04bf7926601d837b09b164b4b7faa08672e2ef90a012751006cbb0a",
+      "card": "catalogo-fotos/derivados/0c5298c1fc1d-3480-adf18972bdbfb900e517721363933904-480-0-card.webp",
+      "gallery": "imagenes/3480-adf18972bdbfb900e517721363933904-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3611_ce-e1ddf3c669c9d4f7e417701289156402-480-0.webp?raw=true": {
+      "original_file": "imagenes/3611_ce-e1ddf3c669c9d4f7e417701289156402-480-0.webp",
+      "original_sha256": "3aa44919e259c5cd4f9480cfa7da6fab08eb5546b7da95b2a1d76bb53eb03abd",
+      "card": "catalogo-fotos/derivados/dae827b182db-3611-ce-e1ddf3c669c9d4f7e417701289156402-480-0-card.webp",
+      "gallery": "imagenes/3611_ce-e1ddf3c669c9d4f7e417701289156402-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3611_nt-77828b01088386fe6d17701289150370-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/3611_nt-77828b01088386fe6d17701289150370-1024-1024.webp",
+      "original_sha256": "de45b040ac11c6eaca15f2ee7a4934169e4fe4da797b776a350367cc43b62779",
+      "card": "catalogo-fotos/derivados/f0b035dce759-3611-nt-77828b01088386fe6d17701289150370-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/f0b035dce759-3611-nt-77828b01088386fe6d17701289150370-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3611_rs-901f4cfeb7ce2a2b9f17701289148475-480-0.webp?raw=true": {
+      "original_file": "imagenes/3611_rs-901f4cfeb7ce2a2b9f17701289148475-480-0.webp",
+      "original_sha256": "f3093041b251033856951711e57bd082544293f89e9d4d2981a8bd97b15a6b4d",
+      "card": "catalogo-fotos/derivados/dd523ac9449d-3611-rs-901f4cfeb7ce2a2b9f17701289148475-480-0-card.webp",
+      "gallery": "imagenes/3611_rs-901f4cfeb7ce2a2b9f17701289148475-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3617_gr1-74bfee9d0bafb7719117793697750567-480-0.webp?raw=true": {
+      "original_file": "imagenes/3617_gr1-74bfee9d0bafb7719117793697750567-480-0.webp",
+      "original_sha256": "8683376ccccfa7ea9e67c70e6bc7e4724525723f686cbf965192e40659267e3f",
+      "card": "catalogo-fotos/derivados/ab75c6cc5a7d-3617-gr1-74bfee9d0bafb7719117793697750567-480-0-card.webp",
+      "gallery": "imagenes/3617_gr1-74bfee9d0bafb7719117793697750567-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/3617_gr2-5143caf6d25fb75e3917793697753725-480-0.webp?raw=true": {
+      "original_file": "imagenes/3617_gr2-5143caf6d25fb75e3917793697753725-480-0.webp",
+      "original_sha256": "8303f671af3932535412a006acdbb339ae5cba577fc65a9af5098b3d7f61a9d5",
+      "card": "catalogo-fotos/derivados/69fc19c7e573-3617-gr2-5143caf6d25fb75e3917793697753725-480-0-card.webp",
+      "gallery": "imagenes/3617_gr2-5143caf6d25fb75e3917793697753725-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/509_gr-3ef59ea428f849d6f917607157929908-480-0.webp?raw=true": {
+      "original_file": "imagenes/509_gr-3ef59ea428f849d6f917607157929908-480-0.webp",
+      "original_sha256": "4084bdd30cf743a872729a484da6bbc70a37a52f30218be42b9a793477ea48d7",
+      "card": "catalogo-fotos/derivados/18236b8a5f85-509-gr-3ef59ea428f849d6f917607157929908-480-0-card.webp",
+      "gallery": "imagenes/509_gr-3ef59ea428f849d6f917607157929908-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/509_rs-4ece321d339cd0472417607160772300-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/509_rs-4ece321d339cd0472417607160772300-1024-1024.webp",
+      "original_sha256": "e3ab076eeea1af6c12b3cb5cbc43071d247d0b34eb653a9cfc871385b021c408",
+      "card": "catalogo-fotos/derivados/3af4ee2e49fb-509-rs-4ece321d339cd0472417607160772300-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/3af4ee2e49fb-509-rs-4ece321d339cd0472417607160772300-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Bree%20Blanco%20(1).webp?raw=true": {
+      "original_file": "imagenes/Body Bree Blanco (1).webp",
+      "original_sha256": "2bf927f66ab249c8637b1442c4a8a7f0db5c6a4929d4d85e0540a32ae43ac452",
+      "card": "catalogo-fotos/derivados/5b1f1858802f-body-bree-blanco-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/5b1f1858802f-body-bree-blanco-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Bree%20Blanco%20(2).webp?raw=true": {
+      "original_file": "imagenes/Body Bree Blanco (2).webp",
+      "original_sha256": "67a2ada79250e632cda124acaff8b8ccdc32d138152e0e7fe883378cbaf5ae7d",
+      "card": "catalogo-fotos/derivados/7be7ce3d8c04-body-bree-blanco-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/7be7ce3d8c04-body-bree-blanco-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Eider%20(2).webp?raw=true": {
+      "original_file": "imagenes/Body Eider (2).webp",
+      "original_sha256": "2e4f499db2ea54fcb30a22a7f4da7d9737a1e3d4c6214d3ff0d50eef744cb904",
+      "card": "catalogo-fotos/derivados/884dc582c0b1-body-eider-2-card.webp",
+      "gallery": "imagenes/Body Eider (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Estampado%20Bree%20Beige%20(1).webp?raw=true": {
+      "original_file": "imagenes/Body Estampado Bree Beige (1).webp",
+      "original_sha256": "2be58808bf70f65a6207d7021555ae77454216b5bcb461f718119e3c03b87e40",
+      "card": "catalogo-fotos/derivados/eee4c18ef39f-body-estampado-bree-beige-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/eee4c18ef39f-body-estampado-bree-beige-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Estampado%20Bree%20Beige%20(2).webp?raw=true": {
+      "original_file": "imagenes/Body Estampado Bree Beige (2).webp",
+      "original_sha256": "9efde02c3a2516483a7f0fb60737180d8b5575f902c6c9a1d2ab9c710a13060d",
+      "card": "catalogo-fotos/derivados/d8c2a1947d97-body-estampado-bree-beige-2-card.webp",
+      "gallery": "imagenes/Body Estampado Bree Beige (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Kerem%20-%20Aqua.png?raw=true": {
+      "original_file": "imagenes/Body Kerem - Aqua.png",
+      "original_sha256": "62c9447214ad873902b0de24c96275b40cf50efa05f852d3ae83a5ddda60bb0f",
+      "card": "catalogo-fotos/derivados/0cf57961554f-body-kerem-aqua-card.webp",
+      "gallery": "catalogo-fotos/derivados/0cf57961554f-body-kerem-aqua-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Kerem%20-%20Verde%20Musgo.png?raw=true": {
+      "original_file": "imagenes/Body Kerem - Verde Musgo.png",
+      "original_sha256": "f81153b6c300ebebc6a23b43014feeb2b82e30e34557a5bb9897a188e56e2094",
+      "card": "catalogo-fotos/derivados/76e6cf68b0a9-body-kerem-verde-musgo-card.webp",
+      "gallery": "catalogo-fotos/derivados/76e6cf68b0a9-body-kerem-verde-musgo-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Lena%20Natural%20(1).webp?raw=true": {
+      "original_file": "imagenes/Body Lena Natural (1).webp",
+      "original_sha256": "013865a8866d925bbbfa0d7c5f480c34accd51095ae735d010dc0df1ab76793b",
+      "card": "catalogo-fotos/derivados/8482b8dffe24-body-lena-natural-1-card.webp",
+      "gallery": "imagenes/Body Lena Natural (1).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Lena%20Natural%20(2).webp?raw=true": {
+      "original_file": "imagenes/Body Lena Natural (2).webp",
+      "original_sha256": "2b7496bb8c06f5b13dcc0ddf9a05d1c7332bc23e7bb1c2950611904a72e9aa3c",
+      "card": "catalogo-fotos/derivados/932b09b44722-body-lena-natural-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/932b09b44722-body-lena-natural-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Nataniel%20Celeste.webp?raw=true": {
+      "original_file": "imagenes/Body Nataniel Celeste.webp",
+      "original_sha256": "2372ea12abe940850d16c233139fb1ce19f75b04e54936213c44f4ce751d8919",
+      "card": "catalogo-fotos/derivados/dca958708dff-body-nataniel-celeste-card.webp",
+      "gallery": "catalogo-fotos/derivados/dca958708dff-body-nataniel-celeste-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Nataniel%20Natural.webp?raw=true": {
+      "original_file": "imagenes/Body Nataniel Natural.webp",
+      "original_sha256": "fcfb03470f9fe76573786e59f5a2ff9a1548d1d6724ed3428382b456e980c9c4",
+      "card": "catalogo-fotos/derivados/10538da31242-body-nataniel-natural-card.webp",
+      "gallery": "imagenes/Body Nataniel Natural.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Zoe%20-%20Celeste.png?raw=true": {
+      "original_file": "imagenes/Body Zoe - Celeste.png",
+      "original_sha256": "ad2ade03b3cee0ae477608b8d815713601c240911830b5ddfb8357dc19f975f2",
+      "card": "catalogo-fotos/derivados/1d092c464402-body-zoe-celeste-card.webp",
+      "gallery": "catalogo-fotos/derivados/1d092c464402-body-zoe-celeste-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Zoe%20-%20Rosa.png?raw=true": {
+      "original_file": "imagenes/Body Zoe - Rosa.png",
+      "original_sha256": "a695bc30589dc555ba1a61e4454b817da2d2e6f6cf394301ccded4f5e3c1181f",
+      "card": "catalogo-fotos/derivados/f97203dfb294-body-zoe-rosa-card.webp",
+      "gallery": "catalogo-fotos/derivados/f97203dfb294-body-zoe-rosa-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Zoe%20-%20Texaco.png?raw=true": {
+      "original_file": "imagenes/Body Zoe - Texaco.png",
+      "original_sha256": "932609dea9c82cc23dbb57fa0ea7e3e8ec27553a8fb0de6d61947be5372e3428",
+      "card": "catalogo-fotos/derivados/862fc5a3bb92-body-zoe-texaco-card.webp",
+      "gallery": "catalogo-fotos/derivados/862fc5a3bb92-body-zoe-texaco-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Zoe%20Natural%20(1).webp?raw=true": {
+      "original_file": "imagenes/Body Zoe Natural (1).webp",
+      "original_sha256": "dca4e585f2d5457f005cb084aee695a4fce6c4d8012f605f514e4d1640160cdd",
+      "card": "catalogo-fotos/derivados/448e22dbd16e-body-zoe-natural-1-card.webp",
+      "gallery": "imagenes/Body Zoe Natural (1).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Body%20Zoe%20Natural%20(2).webp?raw=true": {
+      "original_file": "imagenes/Body Zoe Natural (2).webp",
+      "original_sha256": "823a340776bc8afb080ced90c7410801fd36989ab925ee6ef9c9d15556da4cdc",
+      "card": "catalogo-fotos/derivados/429604337d79-body-zoe-natural-2-card.webp",
+      "gallery": "imagenes/Body Zoe Natural (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Liza%20Violeta%20(1).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Liza Violeta (1).webp",
+      "original_sha256": "7ff549d7ef4c7787b0aebed4f2d3a191144ea6200136055f5c231e25a824f9d6",
+      "card": "catalogo-fotos/derivados/38a921104cf9-conjunto-liza-violeta-1-card.webp",
+      "gallery": "imagenes/Conjunto Liza Violeta (1).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Liza%20Violeta%20(2).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Liza Violeta (2).webp",
+      "original_sha256": "892fae2b8abf5f821f13d5c9eda91894b439a62b78425dbf9a4add4a93178385",
+      "card": "catalogo-fotos/derivados/168ada1d9e57-conjunto-liza-violeta-2-card.webp",
+      "gallery": "imagenes/Conjunto Liza Violeta (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Liza%20Violeta%20(3).webp?raw=true": {
+      "original_file": "imagenes/Conjunto Liza Violeta (3).webp",
+      "original_sha256": "c11546daec1a2454daa7226a6141f4a7d0c98892d8f607a39ccdb12c1e375a92",
+      "card": "catalogo-fotos/derivados/85859064f483-conjunto-liza-violeta-3-card.webp",
+      "gallery": "catalogo-fotos/derivados/85859064f483-conjunto-liza-violeta-3-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Maylu%20Blanco.webp?raw=true": {
+      "original_file": "imagenes/Conjunto Maylu Blanco.webp",
+      "original_sha256": "fabb45a38b0adaa9ec57abb9314f938bb3292833217c8ffc7cfd50fc451fac60",
+      "card": "catalogo-fotos/derivados/8a7f9dca2acc-conjunto-maylu-blanco-card.webp",
+      "gallery": "catalogo-fotos/derivados/8a7f9dca2acc-conjunto-maylu-blanco-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Bosque.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Bosque.png",
+      "original_sha256": "ae93647d6fd450c0bf99d119aa6df3cc44b10af7db24964fb37fb53bf49926d3",
+      "card": "catalogo-fotos/derivados/84802c78f966-conjunto-plush-bosque-card.webp",
+      "gallery": "catalogo-fotos/derivados/84802c78f966-conjunto-plush-bosque-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Caritas%20Ositos.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Caritas Ositos.png",
+      "original_sha256": "b2caa33e87e433b10eb0054911159a9904bafc52233fd8e539d82b4292bbc500",
+      "card": "catalogo-fotos/derivados/241b65399e23-conjunto-plush-caritas-ositos-card.webp",
+      "gallery": "catalogo-fotos/derivados/241b65399e23-conjunto-plush-caritas-ositos-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Celeste.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Celeste.png",
+      "original_sha256": "8345c206d3918afb5dbe31887b03a5cc7af22f204f185909f2ee5c999a8ffce7",
+      "card": "catalogo-fotos/derivados/0c2519f8415d-conjunto-plush-celeste-card.webp",
+      "gallery": "catalogo-fotos/derivados/0c2519f8415d-conjunto-plush-celeste-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Coneja%20Flor.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Coneja Flor.png",
+      "original_sha256": "e0d2bad2566575ff1af2bb656876a33a29580ec917752b5ee99a3b28ec1a5916",
+      "card": "catalogo-fotos/derivados/7b6943518570-conjunto-plush-coneja-flor-card.webp",
+      "gallery": "catalogo-fotos/derivados/7b6943518570-conjunto-plush-coneja-flor-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Dogs.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Dogs.png",
+      "original_sha256": "900863a6bedd222da06f26623169be43c952102363598dbeaf06321291e9ae48",
+      "card": "catalogo-fotos/derivados/0a62feed86a7-conjunto-plush-dogs-card.webp",
+      "gallery": "catalogo-fotos/derivados/0a62feed86a7-conjunto-plush-dogs-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Florcita.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Florcita.png",
+      "original_sha256": "49232af07e00eaf2414ae392a29170b6bb71e8375f18575a797526ea6a574be9",
+      "card": "catalogo-fotos/derivados/bb2faa785344-conjunto-plush-florcita-card.webp",
+      "gallery": "catalogo-fotos/derivados/bb2faa785344-conjunto-plush-florcita-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Malva.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Malva.png",
+      "original_sha256": "079120f764008d2b9cecce55823bc69fce3d1a1095f4efd180533085b5f47337",
+      "card": "catalogo-fotos/derivados/720fb3704d80-conjunto-plush-malva-card.webp",
+      "gallery": "catalogo-fotos/derivados/720fb3704d80-conjunto-plush-malva-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Selva.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Selva.png",
+      "original_sha256": "98915803470b2b5e4c59bcc38ff157573ca69f69f187624cdb79765434ee4cfc",
+      "card": "catalogo-fotos/derivados/8f160e26da6f-conjunto-plush-selva-card.webp",
+      "gallery": "catalogo-fotos/derivados/8f160e26da6f-conjunto-plush-selva-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Toys.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Toys.png",
+      "original_sha256": "6c71b28f8156d84475576e27dc28ea7846df2ff989228e46299abd8be010039d",
+      "card": "catalogo-fotos/derivados/f80b042e38dc-conjunto-plush-toys-card.webp",
+      "gallery": "catalogo-fotos/derivados/f80b042e38dc-conjunto-plush-toys-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Conjunto%20Plush%20Tulipan.png?raw=true": {
+      "original_file": "imagenes/Conjunto Plush Tulipan.png",
+      "original_sha256": "b9999b6cbabe97b91d54d28c3e06a912e98d8e5b67240439cb445b100c8d488c",
+      "card": "catalogo-fotos/derivados/3bf9733dfd1d-conjunto-plush-tulipan-card.webp",
+      "gallery": "catalogo-fotos/derivados/3bf9733dfd1d-conjunto-plush-tulipan-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Enterito%20Tao%20(1).webp?raw=true": {
+      "original_file": "imagenes/Enterito Tao (1).webp",
+      "original_sha256": "247f8cc9ec4475c653e4f62db5738e77af8220ecaec40e7a31519bb446e8103b",
+      "card": "catalogo-fotos/derivados/7c4b124bee81-enterito-tao-1-card.webp",
+      "gallery": "imagenes/Enterito Tao (1).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Enterito%20Tao%20(2).webp?raw=true": {
+      "original_file": "imagenes/Enterito Tao (2).webp",
+      "original_sha256": "8e53baae052843786d092ad085779e952d011cfd1febf80404e530e272d57a94",
+      "card": "catalogo-fotos/derivados/3e8f05afa705-enterito-tao-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/3e8f05afa705-enterito-tao-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_1ifbj61ifbj61ifb.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_1ifbj61ifbj61ifb.png",
+      "original_sha256": "6221adefb6eb29ec82cbfc51c3dc935dc813f8d57a9ee1f1f3bcf00a0ba32083",
+      "card": "catalogo-fotos/derivados/eb92a8bea06c-gemini-generated-image-1ifbj61ifbj61ifb-card.webp",
+      "gallery": "catalogo-fotos/derivados/eb92a8bea06c-gemini-generated-image-1ifbj61ifbj61ifb-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_1wat2z1wat2z1wat.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_1wat2z1wat2z1wat.png",
+      "original_sha256": "b6a2b88689445bb6919e11d3b4c1e65314e46c319752cea58ac1872edd474087",
+      "card": "catalogo-fotos/derivados/ab1631b37ac1-gemini-generated-image-1wat2z1wat2z1wat-card.webp",
+      "gallery": "catalogo-fotos/derivados/ab1631b37ac1-gemini-generated-image-1wat2z1wat2z1wat-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_2a5s732a5s732a5s.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_2a5s732a5s732a5s.png",
+      "original_sha256": "26e94499fe4c2a1f00912a3b01f0d7630da959eb39f3d4402588820633457f46",
+      "card": "catalogo-fotos/derivados/787e0d4aae5d-gemini-generated-image-2a5s732a5s732a5s-card.webp",
+      "gallery": "catalogo-fotos/derivados/787e0d4aae5d-gemini-generated-image-2a5s732a5s732a5s-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_2gkixr2gkixr2gki.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_2gkixr2gkixr2gki.png",
+      "original_sha256": "10a0eb48a4bcfa349d4e01f700cec644733592d762f81d87d49b3950db7d745b",
+      "card": "catalogo-fotos/derivados/c1e7d3601d7f-gemini-generated-image-2gkixr2gkixr2gki-card.webp",
+      "gallery": "catalogo-fotos/derivados/c1e7d3601d7f-gemini-generated-image-2gkixr2gkixr2gki-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_32wde632wde632wd.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_32wde632wde632wd.png",
+      "original_sha256": "0d1128fce3ad37b6e2d32bb8606af4ba8a6fd5cc520ff75eb2fbff5b95e5380d",
+      "card": "catalogo-fotos/derivados/26a4cb1f807a-gemini-generated-image-32wde632wde632wd-card.webp",
+      "gallery": "catalogo-fotos/derivados/26a4cb1f807a-gemini-generated-image-32wde632wde632wd-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_3bgs2m3bgs2m3bgs.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_3bgs2m3bgs2m3bgs.png",
+      "original_sha256": "e25724c391375fe46c8cdce029bb9cae151cbc057a5681a7bb95dea6caffb9f0",
+      "card": "catalogo-fotos/derivados/de4039abc876-gemini-generated-image-3bgs2m3bgs2m3bgs-card.webp",
+      "gallery": "catalogo-fotos/derivados/de4039abc876-gemini-generated-image-3bgs2m3bgs2m3bgs-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_3h3sqx3h3sqx3h3s.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_3h3sqx3h3sqx3h3s.png",
+      "original_sha256": "d7831fe498a052443d463313c4eadc171f788fe72a0401795c6019198828644e",
+      "card": "catalogo-fotos/derivados/91e512a007fe-gemini-generated-image-3h3sqx3h3sqx3h3s-card.webp",
+      "gallery": "catalogo-fotos/derivados/91e512a007fe-gemini-generated-image-3h3sqx3h3sqx3h3s-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_4f3edi4f3edi4f3e.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_4f3edi4f3edi4f3e.png",
+      "original_sha256": "a91b142cafe5256e8c335f5422bd4df6fea969c1760d0ec36b30fdb503741f24",
+      "card": "catalogo-fotos/derivados/da105434e7b6-gemini-generated-image-4f3edi4f3edi4f3e-card.webp",
+      "gallery": "catalogo-fotos/derivados/da105434e7b6-gemini-generated-image-4f3edi4f3edi4f3e-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_4hxfpk4hxfpk4hxf.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_4hxfpk4hxfpk4hxf.png",
+      "original_sha256": "cb0b9260183f10a2953860e00be5176571c7206f629ed8045327cb61accb6c6f",
+      "card": "catalogo-fotos/derivados/363a3011e4d4-gemini-generated-image-4hxfpk4hxfpk4hxf-card.webp",
+      "gallery": "catalogo-fotos/derivados/363a3011e4d4-gemini-generated-image-4hxfpk4hxfpk4hxf-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_4rtu724rtu724rtu.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_4rtu724rtu724rtu.png",
+      "original_sha256": "dc5e4fa45e880bf3b43f7dd5704386a63430c7f842757ed5d8471ebc1c1f37d8",
+      "card": "catalogo-fotos/derivados/4dc3b61acb2e-gemini-generated-image-4rtu724rtu724rtu-card.webp",
+      "gallery": "catalogo-fotos/derivados/4dc3b61acb2e-gemini-generated-image-4rtu724rtu724rtu-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_51vgmm51vgmm51vg.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_51vgmm51vgmm51vg.png",
+      "original_sha256": "fa9a1bbd65817970fe4246e6ed0b317cf34a4aa02b0eddb27c98d37af8eb98ac",
+      "card": "catalogo-fotos/derivados/a4d6124b9413-gemini-generated-image-51vgmm51vgmm51vg-card.webp",
+      "gallery": "catalogo-fotos/derivados/a4d6124b9413-gemini-generated-image-51vgmm51vgmm51vg-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_5i2foc5i2foc5i2f.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_5i2foc5i2foc5i2f.png",
+      "original_sha256": "1ec12709aa06ba795d829b79b3a229c93a46336ee6ce1f62a4cae88d408e5362",
+      "card": "catalogo-fotos/derivados/5843bc63607e-gemini-generated-image-5i2foc5i2foc5i2f-card.webp",
+      "gallery": "catalogo-fotos/derivados/5843bc63607e-gemini-generated-image-5i2foc5i2foc5i2f-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_5s9sad5s9sad5s9s.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_5s9sad5s9sad5s9s.png",
+      "original_sha256": "901a9e0fb35150606e5bef67c6a30a0d2ca776eb922d56fe3aae5bdff099e042",
+      "card": "catalogo-fotos/derivados/40b07763f6b0-gemini-generated-image-5s9sad5s9sad5s9s-card.webp",
+      "gallery": "catalogo-fotos/derivados/40b07763f6b0-gemini-generated-image-5s9sad5s9sad5s9s-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_5slmpo5slmpo5slm.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_5slmpo5slmpo5slm.png",
+      "original_sha256": "a5caccd7cf41b21fab17ec7e1581fff01d9afa1d30ba08b9b169252a5f5ffeb7",
+      "card": "catalogo-fotos/derivados/2dd717e9d89b-gemini-generated-image-5slmpo5slmpo5slm-card.webp",
+      "gallery": "catalogo-fotos/derivados/2dd717e9d89b-gemini-generated-image-5slmpo5slmpo5slm-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_6bixyz6bixyz6bix.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_6bixyz6bixyz6bix.png",
+      "original_sha256": "45c41c6d80e09a76de463c1867c4105c874877e68cd2f2cf7cb2cbea9edf8a47",
+      "card": "catalogo-fotos/derivados/24af9d43cac4-gemini-generated-image-6bixyz6bixyz6bix-card.webp",
+      "gallery": "catalogo-fotos/derivados/24af9d43cac4-gemini-generated-image-6bixyz6bixyz6bix-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_6k3qv6k3qv6k3qv6.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_6k3qv6k3qv6k3qv6.png",
+      "original_sha256": "8af8b62f704de0dd970f9825eb0d9843ec59652475740d7d5bb1040ec1794338",
+      "card": "catalogo-fotos/derivados/898f50aef751-gemini-generated-image-6k3qv6k3qv6k3qv6-card.webp",
+      "gallery": "catalogo-fotos/derivados/898f50aef751-gemini-generated-image-6k3qv6k3qv6k3qv6-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_6lo7vk6lo7vk6lo7.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_6lo7vk6lo7vk6lo7.png",
+      "original_sha256": "da58cb7a935efdba8c7f4576fda11cff79a0f05bc28623f15e182f09708fe0e6",
+      "card": "catalogo-fotos/derivados/7006cd9cc12e-gemini-generated-image-6lo7vk6lo7vk6lo7-card.webp",
+      "gallery": "catalogo-fotos/derivados/7006cd9cc12e-gemini-generated-image-6lo7vk6lo7vk6lo7-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_6wyz5v6wyz5v6wyz.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_6wyz5v6wyz5v6wyz.png",
+      "original_sha256": "db05d6d062c5fd4e51597f5ef783865c138da1b1d2ae2aa733b2229a3b39e861",
+      "card": "catalogo-fotos/derivados/f18ee25c152c-gemini-generated-image-6wyz5v6wyz5v6wyz-card.webp",
+      "gallery": "catalogo-fotos/derivados/f18ee25c152c-gemini-generated-image-6wyz5v6wyz5v6wyz-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_8g9usn8g9usn8g9u.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_8g9usn8g9usn8g9u.png",
+      "original_sha256": "2bd26e7b816c5f00fae0b7f64f8f83f3ae73c4671eba870a2cccc6e4fb43e4fa",
+      "card": "catalogo-fotos/derivados/8b325acefd3b-gemini-generated-image-8g9usn8g9usn8g9u-card.webp",
+      "gallery": "catalogo-fotos/derivados/8b325acefd3b-gemini-generated-image-8g9usn8g9usn8g9u-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_8ocfrc8ocfrc8ocf.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_8ocfrc8ocfrc8ocf.png",
+      "original_sha256": "3d7ed94428df011194e2d846b98f52a1c557a36c3d93163d1bc735fb9fe74414",
+      "card": "catalogo-fotos/derivados/d322e8e3f1ea-gemini-generated-image-8ocfrc8ocfrc8ocf-card.webp",
+      "gallery": "catalogo-fotos/derivados/d322e8e3f1ea-gemini-generated-image-8ocfrc8ocfrc8ocf-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_8qdkeq8qdkeq8qdk.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_8qdkeq8qdkeq8qdk.png",
+      "original_sha256": "7565a6f72ba9edb956f48294090fa8e480d85637b35b6cce923d9a7bb22623af",
+      "card": "catalogo-fotos/derivados/08e4bd7901b9-gemini-generated-image-8qdkeq8qdkeq8qdk-card.webp",
+      "gallery": "catalogo-fotos/derivados/08e4bd7901b9-gemini-generated-image-8qdkeq8qdkeq8qdk-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_a8yljpa8yljpa8yl.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_a8yljpa8yljpa8yl.png",
+      "original_sha256": "64153ed7773fe490ed3bdb2c7335f66ffc9f4d8a96ba6ea5333a11789dd7c3b6",
+      "card": "catalogo-fotos/derivados/24ad47964e79-gemini-generated-image-a8yljpa8yljpa8yl-card.webp",
+      "gallery": "catalogo-fotos/derivados/24ad47964e79-gemini-generated-image-a8yljpa8yljpa8yl-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_ad99v7ad99v7ad99.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_ad99v7ad99v7ad99.png",
+      "original_sha256": "42ed744376214e5150223119ff8fa0e643bfc85e81cf25d2f69ecd2f4431fb0a",
+      "card": "catalogo-fotos/derivados/84a9413472bf-gemini-generated-image-ad99v7ad99v7ad99-card.webp",
+      "gallery": "catalogo-fotos/derivados/84a9413472bf-gemini-generated-image-ad99v7ad99v7ad99-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_at6v2jat6v2jat6v.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_at6v2jat6v2jat6v.png",
+      "original_sha256": "06dd0954b701aa84347b51b39cf941e2d3a6e06cdae69ba8a63a228f7429a806",
+      "card": "catalogo-fotos/derivados/f2253451d7d0-gemini-generated-image-at6v2jat6v2jat6v-card.webp",
+      "gallery": "catalogo-fotos/derivados/f2253451d7d0-gemini-generated-image-at6v2jat6v2jat6v-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_aufvnnaufvnnaufv.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_aufvnnaufvnnaufv.png",
+      "original_sha256": "fdd78e7c74c618b4e493e4f65d7a89ba67b6afc607e13ccfe1d31a9096eebd1f",
+      "card": "catalogo-fotos/derivados/f4b27eaf3223-gemini-generated-image-aufvnnaufvnnaufv-card.webp",
+      "gallery": "catalogo-fotos/derivados/f4b27eaf3223-gemini-generated-image-aufvnnaufvnnaufv-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_b0j5ivb0j5ivb0j5.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_b0j5ivb0j5ivb0j5.png",
+      "original_sha256": "78c1d4b5d0e1fa515406965841928f562cfa31ccc9ab1e727a140decb6606c2e",
+      "card": "catalogo-fotos/derivados/0904a4687b56-gemini-generated-image-b0j5ivb0j5ivb0j5-card.webp",
+      "gallery": "catalogo-fotos/derivados/0904a4687b56-gemini-generated-image-b0j5ivb0j5ivb0j5-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_bm4fu2bm4fu2bm4f.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_bm4fu2bm4fu2bm4f.png",
+      "original_sha256": "705d6f5ee05e8502adc82440c0328482517973a7b093d20ea40f5eaad14df1bc",
+      "card": "catalogo-fotos/derivados/49c9c2d0426c-gemini-generated-image-bm4fu2bm4fu2bm4f-card.webp",
+      "gallery": "catalogo-fotos/derivados/49c9c2d0426c-gemini-generated-image-bm4fu2bm4fu2bm4f-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_bmep6nbmep6nbmep.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_bmep6nbmep6nbmep.png",
+      "original_sha256": "873b16ad875f75bda1443f9e8939319a25f8bfbe3ee011121d5aa4786a34092f",
+      "card": "catalogo-fotos/derivados/6168778678be-gemini-generated-image-bmep6nbmep6nbmep-card.webp",
+      "gallery": "catalogo-fotos/derivados/6168778678be-gemini-generated-image-bmep6nbmep6nbmep-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_d0lb6sd0lb6sd0lb.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_d0lb6sd0lb6sd0lb.png",
+      "original_sha256": "7ef51f22b75253c934d0522a79d8e5c68edc4b352825ef508d7e4b0948c5178d",
+      "card": "catalogo-fotos/derivados/bcc0306b21de-gemini-generated-image-d0lb6sd0lb6sd0lb-card.webp",
+      "gallery": "catalogo-fotos/derivados/bcc0306b21de-gemini-generated-image-d0lb6sd0lb6sd0lb-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_dzglmodzglmodzgl.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_dzglmodzglmodzgl.png",
+      "original_sha256": "8847fb30a5ea10e5e8743aa17ada567ff83f7407bdbd6ef0fab7567ebb093ff8",
+      "card": "catalogo-fotos/derivados/a78cbcf39adc-gemini-generated-image-dzglmodzglmodzgl-card.webp",
+      "gallery": "catalogo-fotos/derivados/a78cbcf39adc-gemini-generated-image-dzglmodzglmodzgl-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_e52v3re52v3re52v.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_e52v3re52v3re52v.png",
+      "original_sha256": "7ceb1b9c7816a47ba39d43e1ec09b34d1f924fa608a425948ef4a0b61d31186e",
+      "card": "catalogo-fotos/derivados/fe6686ba8819-gemini-generated-image-e52v3re52v3re52v-card.webp",
+      "gallery": "catalogo-fotos/derivados/fe6686ba8819-gemini-generated-image-e52v3re52v3re52v-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_ememe1ememe1emem.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_ememe1ememe1emem.png",
+      "original_sha256": "6dd56985820b0230ad1c630f88d0c65a840168e1efe69f3e8e1ccbdc6268a0e3",
+      "card": "catalogo-fotos/derivados/d38b05e3bb6b-gemini-generated-image-ememe1ememe1emem-card.webp",
+      "gallery": "catalogo-fotos/derivados/d38b05e3bb6b-gemini-generated-image-ememe1ememe1emem-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_f0ydytf0ydytf0yd.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_f0ydytf0ydytf0yd.png",
+      "original_sha256": "4421205ecb2c09793ff6527a54e8d52176eb1baa09beb035f1d0a792518f4524",
+      "card": "catalogo-fotos/derivados/3c8f72c3f4c2-gemini-generated-image-f0ydytf0ydytf0yd-card.webp",
+      "gallery": "catalogo-fotos/derivados/3c8f72c3f4c2-gemini-generated-image-f0ydytf0ydytf0yd-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_f80kpff80kpff80k.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_f80kpff80kpff80k.png",
+      "original_sha256": "ffa5ab71973263a6cfe8dc19fd7a4d4a4888cda5b892b123305d0fcc2fca0dd3",
+      "card": "catalogo-fotos/derivados/21000743ac34-gemini-generated-image-f80kpff80kpff80k-card.webp",
+      "gallery": "catalogo-fotos/derivados/21000743ac34-gemini-generated-image-f80kpff80kpff80k-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_g17x5dg17x5dg17x.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_g17x5dg17x5dg17x.png",
+      "original_sha256": "8181acf0c2728d72beea9befe347fe85248829479f8e5e182327cf910f5d1d44",
+      "card": "catalogo-fotos/derivados/c8ae74532680-gemini-generated-image-g17x5dg17x5dg17x-card.webp",
+      "gallery": "catalogo-fotos/derivados/c8ae74532680-gemini-generated-image-g17x5dg17x5dg17x-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_gb28vlgb28vlgb28.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_gb28vlgb28vlgb28.png",
+      "original_sha256": "5ca45afa2e168102d13a189c6d1d8500ff6717c943bc53df8ba443bc770135ae",
+      "card": "catalogo-fotos/derivados/428c19ba496d-gemini-generated-image-gb28vlgb28vlgb28-card.webp",
+      "gallery": "catalogo-fotos/derivados/428c19ba496d-gemini-generated-image-gb28vlgb28vlgb28-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_h4wdcfh4wdcfh4wd.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_h4wdcfh4wdcfh4wd.png",
+      "original_sha256": "fd2895ca2070e7a5ccf1ecc0df39216b299814d90f834499bde5fa8fd068ec91",
+      "card": "catalogo-fotos/derivados/5d17f9cd213b-gemini-generated-image-h4wdcfh4wdcfh4wd-card.webp",
+      "gallery": "catalogo-fotos/derivados/5d17f9cd213b-gemini-generated-image-h4wdcfh4wdcfh4wd-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_hktbk3hktbk3hktb.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_hktbk3hktbk3hktb.png",
+      "original_sha256": "1c4c8f6972cc49c3653345803d63fafaee7c3825b03cff01b47f02d90ac16b63",
+      "card": "catalogo-fotos/derivados/ab0b10fc3453-gemini-generated-image-hktbk3hktbk3hktb-card.webp",
+      "gallery": "catalogo-fotos/derivados/ab0b10fc3453-gemini-generated-image-hktbk3hktbk3hktb-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_hptw9ihptw9ihptw.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_hptw9ihptw9ihptw.png",
+      "original_sha256": "b838a5b9d1c5877e3beb8e28665dc2cf1efc3713f7dd9165f1ec52654f644828",
+      "card": "catalogo-fotos/derivados/c9607db98067-gemini-generated-image-hptw9ihptw9ihptw-card.webp",
+      "gallery": "catalogo-fotos/derivados/c9607db98067-gemini-generated-image-hptw9ihptw9ihptw-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_hz55e1hz55e1hz55.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_hz55e1hz55e1hz55.png",
+      "original_sha256": "e46567be0c11b493586b7f1edadb08ca13e646854c15f6fa8f9b211204f229a9",
+      "card": "catalogo-fotos/derivados/a42627dabfe6-gemini-generated-image-hz55e1hz55e1hz55-card.webp",
+      "gallery": "catalogo-fotos/derivados/a42627dabfe6-gemini-generated-image-hz55e1hz55e1hz55-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_idt05lidt05lidt0.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_idt05lidt05lidt0.png",
+      "original_sha256": "7b7cc93a14bb9369cb19a256fa6b57469ebb8d50543fae1aec248b02496c36b4",
+      "card": "catalogo-fotos/derivados/2d33bfb47528-gemini-generated-image-idt05lidt05lidt0-card.webp",
+      "gallery": "catalogo-fotos/derivados/2d33bfb47528-gemini-generated-image-idt05lidt05lidt0-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_ios2ipios2ipios2.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_ios2ipios2ipios2.png",
+      "original_sha256": "0c63fc3a29f4ba2b204542c15609203b126e76a63f2b58b31b849e3e8f072026",
+      "card": "catalogo-fotos/derivados/fa464519698c-gemini-generated-image-ios2ipios2ipios2-card.webp",
+      "gallery": "catalogo-fotos/derivados/fa464519698c-gemini-generated-image-ios2ipios2ipios2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_iq8dmkiq8dmkiq8d.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_iq8dmkiq8dmkiq8d.png",
+      "original_sha256": "33fa6849638ba23d8d3f6e61c8a4844381aba22816cef060015fb65c60a13cb2",
+      "card": "catalogo-fotos/derivados/4ca924367d6b-gemini-generated-image-iq8dmkiq8dmkiq8d-card.webp",
+      "gallery": "catalogo-fotos/derivados/4ca924367d6b-gemini-generated-image-iq8dmkiq8dmkiq8d-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_j1phh8j1phh8j1ph.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_j1phh8j1phh8j1ph.png",
+      "original_sha256": "7d117ce40444d9e67d73b2bcea57158e23a73ff088baa8dbbe119b6c1e097a11",
+      "card": "catalogo-fotos/derivados/994481d45ac2-gemini-generated-image-j1phh8j1phh8j1ph-card.webp",
+      "gallery": "catalogo-fotos/derivados/994481d45ac2-gemini-generated-image-j1phh8j1phh8j1ph-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_j9f6huj9f6huj9f6.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_j9f6huj9f6huj9f6.png",
+      "original_sha256": "398ac2fd63f669e91708d6ab5ea2ca0c85da310f08383cd4e0d93f597f467f05",
+      "card": "catalogo-fotos/derivados/e9d824895e28-gemini-generated-image-j9f6huj9f6huj9f6-card.webp",
+      "gallery": "catalogo-fotos/derivados/e9d824895e28-gemini-generated-image-j9f6huj9f6huj9f6-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_jnypkwjnypkwjnyp%20(1).png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_jnypkwjnypkwjnyp (1).png",
+      "original_sha256": "23cb8efcdef78d977b3baf7e56d9097c292765bfba9e4fc30c97ccf18783c715",
+      "card": "catalogo-fotos/derivados/6a5c17677cc8-gemini-generated-image-jnypkwjnypkwjnyp-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/6a5c17677cc8-gemini-generated-image-jnypkwjnypkwjnyp-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_k0cqcok0cqcok0cq.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_k0cqcok0cqcok0cq.png",
+      "original_sha256": "d461b098a24967b20e80c68e19401e82590b22f893304568b4dc5ae0297e9a3e",
+      "card": "catalogo-fotos/derivados/74eabe473596-gemini-generated-image-k0cqcok0cqcok0cq-card.webp",
+      "gallery": "catalogo-fotos/derivados/74eabe473596-gemini-generated-image-k0cqcok0cqcok0cq-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_kpmdk6kpmdk6kpmd.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_kpmdk6kpmdk6kpmd.png",
+      "original_sha256": "039755560be618a77d759b66e2513f548fc0a99af9079db37c691fc9c75b5911",
+      "card": "catalogo-fotos/derivados/c70be83ac9e6-gemini-generated-image-kpmdk6kpmdk6kpmd-card.webp",
+      "gallery": "catalogo-fotos/derivados/c70be83ac9e6-gemini-generated-image-kpmdk6kpmdk6kpmd-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_lorwpelorwpelorw.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_lorwpelorwpelorw.png",
+      "original_sha256": "32d94875d6a07fae66566ded95d4bf7b3eb74f5657705b27a99e58a9aca874c7",
+      "card": "catalogo-fotos/derivados/868b9c842a31-gemini-generated-image-lorwpelorwpelorw-card.webp",
+      "gallery": "catalogo-fotos/derivados/868b9c842a31-gemini-generated-image-lorwpelorwpelorw-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_lpb7p9lpb7p9lpb7.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_lpb7p9lpb7p9lpb7.png",
+      "original_sha256": "17e4b3f4272fa1929f6d5e3a9c2fb2391e0cd9f7af505c21620d1f252bd7ddad",
+      "card": "catalogo-fotos/derivados/f6383633aec2-gemini-generated-image-lpb7p9lpb7p9lpb7-card.webp",
+      "gallery": "catalogo-fotos/derivados/f6383633aec2-gemini-generated-image-lpb7p9lpb7p9lpb7-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_lsx3n3lsx3n3lsx3.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_lsx3n3lsx3n3lsx3.png",
+      "original_sha256": "6982fe78b288cf3340736cecd321178f36fe5f51b6fa001f3ab34aa698550050",
+      "card": "catalogo-fotos/derivados/f604144ac658-gemini-generated-image-lsx3n3lsx3n3lsx3-card.webp",
+      "gallery": "catalogo-fotos/derivados/f604144ac658-gemini-generated-image-lsx3n3lsx3n3lsx3-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_lyzwvwlyzwvwlyzw.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_lyzwvwlyzwvwlyzw.png",
+      "original_sha256": "f43a1e19ae114b1f1f0b4362cbc9693a902570e6371c7988a68d229dc896081c",
+      "card": "catalogo-fotos/derivados/daf19d82ab2a-gemini-generated-image-lyzwvwlyzwvwlyzw-card.webp",
+      "gallery": "catalogo-fotos/derivados/daf19d82ab2a-gemini-generated-image-lyzwvwlyzwvwlyzw-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_m23fg1m23fg1m23f.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_m23fg1m23fg1m23f.png",
+      "original_sha256": "6f121614af08c1354e7fac49c09b85d3688cafcee405b4711fbb6cf0cf1a8d57",
+      "card": "catalogo-fotos/derivados/de43b55862e6-gemini-generated-image-m23fg1m23fg1m23f-card.webp",
+      "gallery": "catalogo-fotos/derivados/de43b55862e6-gemini-generated-image-m23fg1m23fg1m23f-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_md6cbimd6cbimd6c.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_md6cbimd6cbimd6c.png",
+      "original_sha256": "fd013eca41065e5742a2f1b8f5a009bb6eb801e93881860af0a6ccea0f7d1877",
+      "card": "catalogo-fotos/derivados/c49e20cfc886-gemini-generated-image-md6cbimd6cbimd6c-card.webp",
+      "gallery": "catalogo-fotos/derivados/c49e20cfc886-gemini-generated-image-md6cbimd6cbimd6c-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_mszfklmszfklmszf.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_mszfklmszfklmszf.png",
+      "original_sha256": "fb82c1e91851de24c1e4074ba2918d821e432e823d4b7718252903f105a003f6",
+      "card": "catalogo-fotos/derivados/a23c979b34ac-gemini-generated-image-mszfklmszfklmszf-card.webp",
+      "gallery": "catalogo-fotos/derivados/a23c979b34ac-gemini-generated-image-mszfklmszfklmszf-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_n70gtjn70gtjn70g.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_n70gtjn70gtjn70g.png",
+      "original_sha256": "98002aa762c5bb4af70c8fb386ac8e518324d09eae8636e86cb946eab2fe88d4",
+      "card": "catalogo-fotos/derivados/509a9f66e58f-gemini-generated-image-n70gtjn70gtjn70g-card.webp",
+      "gallery": "catalogo-fotos/derivados/509a9f66e58f-gemini-generated-image-n70gtjn70gtjn70g-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_ncqjlmncqjlmncqj.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_ncqjlmncqjlmncqj.png",
+      "original_sha256": "b364d2a11b19043fc72be81a9c6b58d6ffbfc0b4d68783b8efe4acb07cec7edf",
+      "card": "catalogo-fotos/derivados/00a93ffe6876-gemini-generated-image-ncqjlmncqjlmncqj-card.webp",
+      "gallery": "catalogo-fotos/derivados/00a93ffe6876-gemini-generated-image-ncqjlmncqjlmncqj-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_npu7jbnpu7jbnpu7.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_npu7jbnpu7jbnpu7.png",
+      "original_sha256": "0d819b790fa2c4cb31721efc83ab5d5b43a07362d33cc3d342e22b71b4a4f93a",
+      "card": "catalogo-fotos/derivados/7b95b796f7da-gemini-generated-image-npu7jbnpu7jbnpu7-card.webp",
+      "gallery": "catalogo-fotos/derivados/7b95b796f7da-gemini-generated-image-npu7jbnpu7jbnpu7-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_nzv0ugnzv0ugnzv0.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_nzv0ugnzv0ugnzv0.png",
+      "original_sha256": "0d75d4f4a390306720c90841cf252d5897279cdc01271149fc513253be6dcf65",
+      "card": "catalogo-fotos/derivados/b26d2974e0b0-gemini-generated-image-nzv0ugnzv0ugnzv0-card.webp",
+      "gallery": "catalogo-fotos/derivados/b26d2974e0b0-gemini-generated-image-nzv0ugnzv0ugnzv0-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_o1rqy1o1rqy1o1rq.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_o1rqy1o1rqy1o1rq.png",
+      "original_sha256": "d8a2d541c92bf66a70d6daa543dc614f85aea091734bbc5971a0f1bdc2384429",
+      "card": "catalogo-fotos/derivados/f7d5ed2b9af1-gemini-generated-image-o1rqy1o1rqy1o1rq-card.webp",
+      "gallery": "catalogo-fotos/derivados/f7d5ed2b9af1-gemini-generated-image-o1rqy1o1rqy1o1rq-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_oleme3oleme3olem.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_oleme3oleme3olem.png",
+      "original_sha256": "9a3125ae288bac924d285bbdaf8268acce3dc4cacea2d1ad831b1f6f39133270",
+      "card": "catalogo-fotos/derivados/922114fc7777-gemini-generated-image-oleme3oleme3olem-card.webp",
+      "gallery": "catalogo-fotos/derivados/922114fc7777-gemini-generated-image-oleme3oleme3olem-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_p9fxgqp9fxgqp9fx.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_p9fxgqp9fxgqp9fx.png",
+      "original_sha256": "6df6a721576f754819df93832892bfe366a662214049376201fd8845f2006ed4",
+      "card": "catalogo-fotos/derivados/ed96e9508a57-gemini-generated-image-p9fxgqp9fxgqp9fx-card.webp",
+      "gallery": "catalogo-fotos/derivados/ed96e9508a57-gemini-generated-image-p9fxgqp9fxgqp9fx-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_pbhejepbhejepbhe.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_pbhejepbhejepbhe.png",
+      "original_sha256": "8a48c5fc93775009d74984fd15d7507df8c729c5d9a914c2fbfc7572ee69917f",
+      "card": "catalogo-fotos/derivados/80ed9aecaa97-gemini-generated-image-pbhejepbhejepbhe-card.webp",
+      "gallery": "catalogo-fotos/derivados/80ed9aecaa97-gemini-generated-image-pbhejepbhejepbhe-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_q1frg3q1frg3q1fr.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_q1frg3q1frg3q1fr.png",
+      "original_sha256": "21db7b7797655d8847693d04ffc35b971869df75b99f4d2a60eed82d1a81d8ec",
+      "card": "catalogo-fotos/derivados/ab5954420ba7-gemini-generated-image-q1frg3q1frg3q1fr-card.webp",
+      "gallery": "catalogo-fotos/derivados/ab5954420ba7-gemini-generated-image-q1frg3q1frg3q1fr-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_qfgtztqfgtztqfgt.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_qfgtztqfgtztqfgt.png",
+      "original_sha256": "3533f29b673a491bd709a7ed65b12933f9ab3c91cd86c1ec537f2b385dbf57f4",
+      "card": "catalogo-fotos/derivados/98aa6985bc07-gemini-generated-image-qfgtztqfgtztqfgt-card.webp",
+      "gallery": "catalogo-fotos/derivados/98aa6985bc07-gemini-generated-image-qfgtztqfgtztqfgt-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_r8wxblr8wxblr8wx.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_r8wxblr8wxblr8wx.png",
+      "original_sha256": "9597789049062380656ecd2eff3e688def7ea9e9c88264ee95dca794f2f48972",
+      "card": "catalogo-fotos/derivados/91cf5cc1c116-gemini-generated-image-r8wxblr8wxblr8wx-card.webp",
+      "gallery": "catalogo-fotos/derivados/91cf5cc1c116-gemini-generated-image-r8wxblr8wxblr8wx-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_r9e6o5r9e6o5r9e6.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_r9e6o5r9e6o5r9e6.png",
+      "original_sha256": "2a418765ad50e0f227543edda7d61c633cca0aab61c107826982f599a245181b",
+      "card": "catalogo-fotos/derivados/9c58eccd40a6-gemini-generated-image-r9e6o5r9e6o5r9e6-card.webp",
+      "gallery": "catalogo-fotos/derivados/9c58eccd40a6-gemini-generated-image-r9e6o5r9e6o5r9e6-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_re442qre442qre44.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_re442qre442qre44.png",
+      "original_sha256": "437a7c86cfd165b5504238366b22705935f8719dd9afa8e9d444fe0ae09a7e9e",
+      "card": "catalogo-fotos/derivados/0b8f13680262-gemini-generated-image-re442qre442qre44-card.webp",
+      "gallery": "catalogo-fotos/derivados/0b8f13680262-gemini-generated-image-re442qre442qre44-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_rhs0fdrhs0fdrhs0.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_rhs0fdrhs0fdrhs0.png",
+      "original_sha256": "f55cdc61c6cbb3983fbfa683faeb0f401d73404bd101415b91d3047d1f6378ed",
+      "card": "catalogo-fotos/derivados/d3e5f5554764-gemini-generated-image-rhs0fdrhs0fdrhs0-card.webp",
+      "gallery": "catalogo-fotos/derivados/d3e5f5554764-gemini-generated-image-rhs0fdrhs0fdrhs0-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_rm19sarm19sarm19.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_rm19sarm19sarm19.png",
+      "original_sha256": "2666a1f5161c847094802192cbca8e39122a51b2afc7f7ebae222c15811b2947",
+      "card": "catalogo-fotos/derivados/11734741103a-gemini-generated-image-rm19sarm19sarm19-card.webp",
+      "gallery": "catalogo-fotos/derivados/11734741103a-gemini-generated-image-rm19sarm19sarm19-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_rrro9rrrro9rrrro.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_rrro9rrrro9rrrro.png",
+      "original_sha256": "a111797d708df23d538df0994e59e07029ee8875a3ceb34ab6ca3f6ba03233d6",
+      "card": "catalogo-fotos/derivados/0a8b32ff3795-gemini-generated-image-rrro9rrrro9rrrro-card.webp",
+      "gallery": "catalogo-fotos/derivados/0a8b32ff3795-gemini-generated-image-rrro9rrrro9rrrro-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_rt4zs4rt4zs4rt4z.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_rt4zs4rt4zs4rt4z.png",
+      "original_sha256": "60c3d5d2b68dd0e79c06d9661bd4611edeccc8d5c5dedb88b2b48dd2bed6bd01",
+      "card": "catalogo-fotos/derivados/fc7f0b55e366-gemini-generated-image-rt4zs4rt4zs4rt4z-card.webp",
+      "gallery": "catalogo-fotos/derivados/fc7f0b55e366-gemini-generated-image-rt4zs4rt4zs4rt4z-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_rvsjmqrvsjmqrvsj.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_rvsjmqrvsjmqrvsj.png",
+      "original_sha256": "4d8ead135685f28ca09eecc845c3a926ca585ae0ee9ed7e92ce00a20d8d1c911",
+      "card": "catalogo-fotos/derivados/e44fe804f2cc-gemini-generated-image-rvsjmqrvsjmqrvsj-card.webp",
+      "gallery": "catalogo-fotos/derivados/e44fe804f2cc-gemini-generated-image-rvsjmqrvsjmqrvsj-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_sw7b2tsw7b2tsw7b.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_sw7b2tsw7b2tsw7b.png",
+      "original_sha256": "4e7c7dc511109e74660aca35103ce5f46a959ab7d156a1b743b8b75bafa9d1e0",
+      "card": "catalogo-fotos/derivados/de1ee0f70cbb-gemini-generated-image-sw7b2tsw7b2tsw7b-card.webp",
+      "gallery": "catalogo-fotos/derivados/de1ee0f70cbb-gemini-generated-image-sw7b2tsw7b2tsw7b-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_tjjmkjtjjmkjtjjm.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_tjjmkjtjjmkjtjjm.png",
+      "original_sha256": "528bfeef25a8874db7a44242fbf4de6101e139a2b70f28883e6fafaa8fe3bb71",
+      "card": "catalogo-fotos/derivados/2c879e609844-gemini-generated-image-tjjmkjtjjmkjtjjm-card.webp",
+      "gallery": "catalogo-fotos/derivados/2c879e609844-gemini-generated-image-tjjmkjtjjmkjtjjm-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_tsfkiatsfkiatsfk.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_tsfkiatsfkiatsfk.png",
+      "original_sha256": "828d2763344ae3bb9d34a6b4e7bf39b8919623f0a065e9df8e8ab067a14138e5",
+      "card": "catalogo-fotos/derivados/469d35c1bcc9-gemini-generated-image-tsfkiatsfkiatsfk-card.webp",
+      "gallery": "catalogo-fotos/derivados/469d35c1bcc9-gemini-generated-image-tsfkiatsfkiatsfk-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_tspt2tspt2tspt2t.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_tspt2tspt2tspt2t.png",
+      "original_sha256": "889d54abd22a07aed6cf16a3a3015b0e5159abe6eeb413dde7746b268c6c7ec5",
+      "card": "catalogo-fotos/derivados/eefbd33a991b-gemini-generated-image-tspt2tspt2tspt2t-card.webp",
+      "gallery": "catalogo-fotos/derivados/eefbd33a991b-gemini-generated-image-tspt2tspt2tspt2t-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_u178eru178eru178.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_u178eru178eru178.png",
+      "original_sha256": "aec6ed44fb2e4439055fe846d8d2f949ad2e511a50d4408db71516fba6b7ceae",
+      "card": "catalogo-fotos/derivados/ef47d6ecd588-gemini-generated-image-u178eru178eru178-card.webp",
+      "gallery": "catalogo-fotos/derivados/ef47d6ecd588-gemini-generated-image-u178eru178eru178-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_us883tus883tus88.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_us883tus883tus88.png",
+      "original_sha256": "8fc884c561c8b453121bbd57be0927c793e2c382165d84b0fe767cf39e3bd1f8",
+      "card": "catalogo-fotos/derivados/3ff30ce2870b-gemini-generated-image-us883tus883tus88-card.webp",
+      "gallery": "catalogo-fotos/derivados/3ff30ce2870b-gemini-generated-image-us883tus883tus88-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_v0dmpnv0dmpnv0dm.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_v0dmpnv0dmpnv0dm.png",
+      "original_sha256": "743cd1ee976b6a9e1e827c6cb7d320fc1ddf8c1dee83dc94d964ee67487c831e",
+      "card": "catalogo-fotos/derivados/5645962558d8-gemini-generated-image-v0dmpnv0dmpnv0dm-card.webp",
+      "gallery": "catalogo-fotos/derivados/5645962558d8-gemini-generated-image-v0dmpnv0dmpnv0dm-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_vitc1mvitc1mvitc.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_vitc1mvitc1mvitc.png",
+      "original_sha256": "726fab9f7adaae27b395971d711e8c3f61f96a2a1c42e7859673db09c90465a7",
+      "card": "catalogo-fotos/derivados/c4b61600ec1d-gemini-generated-image-vitc1mvitc1mvitc-card.webp",
+      "gallery": "catalogo-fotos/derivados/c4b61600ec1d-gemini-generated-image-vitc1mvitc1mvitc-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_vm1m76vm1m76vm1m.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_vm1m76vm1m76vm1m.png",
+      "original_sha256": "2a5ef248953b20763c76b8c2179cc0edc120bd942dd3c3870a89d20ecf87edc8",
+      "card": "catalogo-fotos/derivados/351ffd41d5a9-gemini-generated-image-vm1m76vm1m76vm1m-card.webp",
+      "gallery": "catalogo-fotos/derivados/351ffd41d5a9-gemini-generated-image-vm1m76vm1m76vm1m-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_vn5wkevn5wkevn5w.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_vn5wkevn5wkevn5w.png",
+      "original_sha256": "4e95580b506ffe65d760e3385743e8b5e363e3d7c96ecc0ef30bdc257ce02565",
+      "card": "catalogo-fotos/derivados/b9440c67050c-gemini-generated-image-vn5wkevn5wkevn5w-card.webp",
+      "gallery": "catalogo-fotos/derivados/b9440c67050c-gemini-generated-image-vn5wkevn5wkevn5w-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_w8wp89w8wp89w8wp.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_w8wp89w8wp89w8wp.png",
+      "original_sha256": "638e81ea20a18b2b60ca76f0a95239fece7d7f0086e0f3ca4ab0f86ce088952e",
+      "card": "catalogo-fotos/derivados/09dbcb26481c-gemini-generated-image-w8wp89w8wp89w8wp-card.webp",
+      "gallery": "catalogo-fotos/derivados/09dbcb26481c-gemini-generated-image-w8wp89w8wp89w8wp-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_xiozyhxiozyhxioz.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_xiozyhxiozyhxioz.png",
+      "original_sha256": "f80513295758bfa17453eaf8e35100419890d056eea3f66e172b22088bbc2500",
+      "card": "catalogo-fotos/derivados/dbe45338486d-gemini-generated-image-xiozyhxiozyhxioz-card.webp",
+      "gallery": "catalogo-fotos/derivados/dbe45338486d-gemini-generated-image-xiozyhxiozyhxioz-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_xwdsinxwdsinxwds.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_xwdsinxwdsinxwds.png",
+      "original_sha256": "16534ee0f52d6364d8021aa2229d44a2dc44ee9c607ec8f84074aa11cf429788",
+      "card": "catalogo-fotos/derivados/dcc4531bdaf2-gemini-generated-image-xwdsinxwdsinxwds-card.webp",
+      "gallery": "catalogo-fotos/derivados/dcc4531bdaf2-gemini-generated-image-xwdsinxwdsinxwds-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_xwq0lpxwq0lpxwq0.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_xwq0lpxwq0lpxwq0.png",
+      "original_sha256": "7632cfcdf452b6bcd489887cd08c4577d32f19174f7536be6069e8c0c80285e9",
+      "card": "catalogo-fotos/derivados/1689b5062a72-gemini-generated-image-xwq0lpxwq0lpxwq0-card.webp",
+      "gallery": "catalogo-fotos/derivados/1689b5062a72-gemini-generated-image-xwq0lpxwq0lpxwq0-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_y3cqhqy3cqhqy3cq.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_y3cqhqy3cqhqy3cq.png",
+      "original_sha256": "9e581ee4965f54f29e6b916c1505934846cb440c6277e3329c19a78117e2de62",
+      "card": "catalogo-fotos/derivados/12a5bf6369ac-gemini-generated-image-y3cqhqy3cqhqy3cq-card.webp",
+      "gallery": "catalogo-fotos/derivados/12a5bf6369ac-gemini-generated-image-y3cqhqy3cqhqy3cq-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_y9ri36y9ri36y9ri.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_y9ri36y9ri36y9ri.png",
+      "original_sha256": "9944f9d6c9acf6a59ecd77a8a388855706d827af9b96147f9edee0f726e81016",
+      "card": "catalogo-fotos/derivados/2d93e8d9e165-gemini-generated-image-y9ri36y9ri36y9ri-card.webp",
+      "gallery": "catalogo-fotos/derivados/2d93e8d9e165-gemini-generated-image-y9ri36y9ri36y9ri-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_ygnb9iygnb9iygnb.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_ygnb9iygnb9iygnb.png",
+      "original_sha256": "18779abef05c67559856052cbc35837ebefebb871c8d104748eb548aca991199",
+      "card": "catalogo-fotos/derivados/9b8af4ee5978-gemini-generated-image-ygnb9iygnb9iygnb-card.webp",
+      "gallery": "catalogo-fotos/derivados/9b8af4ee5978-gemini-generated-image-ygnb9iygnb9iygnb-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_z1vmfdz1vmfdz1vm.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_z1vmfdz1vmfdz1vm.png",
+      "original_sha256": "c5328f3485eef9d85e95ba00de02f84f115bfc2eb5f5bec0317fba72f33f2176",
+      "card": "catalogo-fotos/derivados/4f8f011de2fc-gemini-generated-image-z1vmfdz1vmfdz1vm-card.webp",
+      "gallery": "catalogo-fotos/derivados/4f8f011de2fc-gemini-generated-image-z1vmfdz1vmfdz1vm-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_z2ohvvz2ohvvz2oh.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_z2ohvvz2ohvvz2oh.png",
+      "original_sha256": "5ae8ab951422b19e18c8103d8b5283dbddabd40978c5f19774870cdf530f1136",
+      "card": "catalogo-fotos/derivados/100f072599a6-gemini-generated-image-z2ohvvz2ohvvz2oh-card.webp",
+      "gallery": "catalogo-fotos/derivados/100f072599a6-gemini-generated-image-z2ohvvz2ohvvz2oh-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Gemini_Generated_Image_zb2a30zb2a30zb2a.png?raw=true": {
+      "original_file": "imagenes/Gemini_Generated_Image_zb2a30zb2a30zb2a.png",
+      "original_sha256": "ca83090a9bb794e86fadee34a24fdaf032dd7126b0c3103ef8bd22c60e7426cf",
+      "card": "catalogo-fotos/derivados/208e30e34260-gemini-generated-image-zb2a30zb2a30zb2a-card.webp",
+      "gallery": "catalogo-fotos/derivados/208e30e34260-gemini-generated-image-zb2a30zb2a30zb2a-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Set%202%20piezas%20Wild%20(2).webp?raw=true": {
+      "original_file": "imagenes/Set 2 piezas Wild (2).webp",
+      "original_sha256": "6b99d5440379db15eef660086203e638abd109a4fc95f1b9d170e4bd5afdc553",
+      "card": "catalogo-fotos/derivados/0aa21de8f660-set-2-piezas-wild-2-card.webp",
+      "gallery": "imagenes/Set 2 piezas Wild (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Set%202%20piezas%20Wild%20(3).webp?raw=true": {
+      "original_file": "imagenes/Set 2 piezas Wild (3).webp",
+      "original_sha256": "c589e8aeb4d431a331134e8a24756274705293adcd4915f8ccd337c11a8e645d",
+      "card": "catalogo-fotos/derivados/a76394ae82d0-set-2-piezas-wild-3-card.webp",
+      "gallery": "catalogo-fotos/derivados/a76394ae82d0-set-2-piezas-wild-3-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Set%20Bear%20Negro%20(1).webp?raw=true": {
+      "original_file": "imagenes/Set Bear Negro (1).webp",
+      "original_sha256": "1ac2ec51ce7615807e547e1931ab2dd2221ac18653299fdbce0eb7b5fd76f989",
+      "card": "catalogo-fotos/derivados/f8839ba9d8dd-set-bear-negro-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/f8839ba9d8dd-set-bear-negro-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Set%20Bear%20Negro%20(2).webp?raw=true": {
+      "original_file": "imagenes/Set Bear Negro (2).webp",
+      "original_sha256": "22c3c935ad2b28f018a5279c9d591b43b7c92c5b0562efb59e4884599a1ecc39",
+      "card": "catalogo-fotos/derivados/12cefd04343b-set-bear-negro-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/12cefd04343b-set-bear-negro-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Set%20Draco%20Blanco.webp?raw=true": {
+      "original_file": "imagenes/Set Draco Blanco.webp",
+      "original_sha256": "bc1c4fec3a40e4891aea91460e9a4d6c8da7445073e061e504f5b051f9358bfd",
+      "card": "catalogo-fotos/derivados/6df995e1c022-set-draco-blanco-card.webp",
+      "gallery": "catalogo-fotos/derivados/6df995e1c022-set-draco-blanco-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Set%20Isis%20Blanco%20(1).webp?raw=true": {
+      "original_file": "imagenes/Set Isis Blanco (1).webp",
+      "original_sha256": "8b5b0c243f091cd0c5209fb487383ec026d80e1c7a95825037567f35e1f4083c",
+      "card": "catalogo-fotos/derivados/3b864abeaf98-set-isis-blanco-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/3b864abeaf98-set-isis-blanco-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Set%20Isis%20Blanco%20(2).webp?raw=true": {
+      "original_file": "imagenes/Set Isis Blanco (2).webp",
+      "original_sha256": "7008fccef02e59ca23a1cd41c161aeda02651179069486d397791eca445654d0",
+      "card": "catalogo-fotos/derivados/b78b3e193b46-set-isis-blanco-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/b78b3e193b46-set-isis-blanco-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Short%20Multi%20Nena.webp?raw=true": {
+      "original_file": "imagenes/Short Multi Nena.webp",
+      "original_sha256": "25cd06dbb6dc933d16c03c82c932a10b1dec724695dc973ed784f19d206a7fb4",
+      "card": "catalogo-fotos/derivados/a49855391c10-short-multi-nena-card.webp",
+      "gallery": "catalogo-fotos/derivados/a49855391c10-short-multi-nena-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Short%20Multi%20Nene.webp?raw=true": {
+      "original_file": "imagenes/Short Multi Nene.webp",
+      "original_sha256": "79aa68b6b7338b4d6ed8fc8a0e0a613c885e119fe0f5978b7b055dfca2d34c8c",
+      "card": "catalogo-fotos/derivados/a5015156095f-short-multi-nene-card.webp",
+      "gallery": "catalogo-fotos/derivados/a5015156095f-short-multi-nene-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Short%20Multiestampa%20Nena.webp?raw=true": {
+      "original_file": "imagenes/Short Multiestampa Nena.webp",
+      "original_sha256": "229a7c9833b7346c3f9806236bfd660dd9b955c93dcc25491333579411a100b9",
+      "card": "catalogo-fotos/derivados/0d68dd8492d8-short-multiestampa-nena-card.webp",
+      "gallery": "imagenes/Short Multiestampa Nena.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Short%20Talampaya%20Nene%20(1).webp?raw=true": {
+      "original_file": "imagenes/Short Talampaya Nene (1).webp",
+      "original_sha256": "e9952ed8d4dce4946be3366ad65015dc37e1e1cf46a44b6625157b85116b7b00",
+      "card": "catalogo-fotos/derivados/60f82e596601-short-talampaya-nene-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/60f82e596601-short-talampaya-nene-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Short%20Talampaya%20Nene%20(2).webp?raw=true": {
+      "original_file": "imagenes/Short Talampaya Nene (2).webp",
+      "original_sha256": "cc9653b558f84cb5dabf2283385c51409eb34dbe1d46142515dd34ffa9dcf48c",
+      "card": "catalogo-fotos/derivados/2450421eaf6d-short-talampaya-nene-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/2450421eaf6d-short-talampaya-nene-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Short%20crepe%20rustico%20salm%C3%B3n.webp?raw=true": {
+      "original_file": "imagenes/Short crepe rustico salmón.webp",
+      "original_sha256": "50d18fad609df0bf4d0eac0b9a428f237d5134f546dba3be52723bd1f1a76e3f",
+      "card": "catalogo-fotos/derivados/949c29a3d527-short-crepe-rustico-salmon-card.webp",
+      "gallery": "catalogo-fotos/derivados/949c29a3d527-short-crepe-rustico-salmon-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/Short%20r%C3%BAstico%20var%C3%B3n.webp?raw=true": {
+      "original_file": "imagenes/Short rústico varón.webp",
+      "original_sha256": "d36bc06f1aa1cf5d8ed1074862fda7d1fa2593b9c68c358c6bdc43b80168726f",
+      "card": "catalogo-fotos/derivados/c5ccf694d2ae-short-rustico-varon-card.webp",
+      "gallery": "imagenes/Short rústico varón.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/WhatsApp%20Image%202026-05-22%20at%2018.07.38.jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-05-22 at 18.07.38.jpeg",
+      "original_sha256": "aad4e0d8dd3dc55194dda055e819f44fb3fe9dde64a4657d2fa350e06f965a86",
+      "card": "catalogo-fotos/derivados/c0068c1293a4-whatsapp-image-2026-05-22-at-18-07-38-card.webp",
+      "gallery": "catalogo-fotos/derivados/c0068c1293a4-whatsapp-image-2026-05-22-at-18-07-38-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/WhatsApp%20Image%202026-05-22%20at%2018.07.39%20(1).jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-05-22 at 18.07.39 (1).jpeg",
+      "original_sha256": "86157dc4f1d3c533ad52a23c5c227a44c128fd90571d6736d2002c2be11e2d4e",
+      "card": "catalogo-fotos/derivados/4a16c94fd66a-whatsapp-image-2026-05-22-at-18-07-39-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/4a16c94fd66a-whatsapp-image-2026-05-22-at-18-07-39-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/WhatsApp%20Image%202026-05-22%20at%2018.07.40.jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-05-22 at 18.07.40.jpeg",
+      "original_sha256": "f7f89e03b81310cb1a3fd1dd6f84eb06a2182df5ef5095a21a820db9b0f0551a",
+      "card": "catalogo-fotos/derivados/51f26cdaa956-whatsapp-image-2026-05-22-at-18-07-40-card.webp",
+      "gallery": "catalogo-fotos/derivados/51f26cdaa956-whatsapp-image-2026-05-22-at-18-07-40-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/WhatsApp%20Image%202026-05-22%20at%2018.08.18.jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-05-22 at 18.08.18.jpeg",
+      "original_sha256": "f2ca70f6766baaa918be1c71958aae7f21fffbd2d0862ac1448c9ca45b3a2670",
+      "card": "catalogo-fotos/derivados/7637fbee4d10-whatsapp-image-2026-05-22-at-18-08-18-card.webp",
+      "gallery": "catalogo-fotos/derivados/7637fbee4d10-whatsapp-image-2026-05-22-at-18-08-18-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/WhatsApp%20Image%202026-05-27%20at%2016.23.48.jpeg?raw=true": {
+      "original_file": "imagenes/WhatsApp Image 2026-05-27 at 16.23.48.jpeg",
+      "original_sha256": "3a63f3f3a54236a6e2e6684fc5cfcc03d37a267443d9cfa39610698821d29179",
+      "card": "catalogo-fotos/derivados/a290d91abdfe-whatsapp-image-2026-05-27-at-16-23-48-card.webp",
+      "gallery": "catalogo-fotos/derivados/a290d91abdfe-whatsapp-image-2026-05-27-at-16-23-48-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/WhatsApp_Image_2026-05-17_at_18.15.45_39_uq6qsk.jpg?raw=true": {
+      "original_file": "imagenes/WhatsApp_Image_2026-05-17_at_18.15.45_39_uq6qsk.jpg",
+      "original_sha256": "fbf5a8b346d61cbf93d148e21b685e5b7f6cf90569e317f1be2e04e29b9061e3",
+      "card": "catalogo-fotos/derivados/a88f1b615c76-whatsapp-image-2026-05-17-at-18-15-45-39-uq6qsk-card.webp",
+      "gallery": "catalogo-fotos/derivados/a88f1b615c76-whatsapp-image-2026-05-17-at-18-15-45-39-uq6qsk-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/alison%20(1).webp?raw=true": {
+      "original_file": "imagenes/alison (1).webp",
+      "original_sha256": "3087f7e0d223b1b29562d63d978dd880792a3e1ff034dd7d5cf9a26d3cab6335",
+      "card": "catalogo-fotos/derivados/62375c995ed7-alison-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/62375c995ed7-alison-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/alison%20(2).webp?raw=true": {
+      "original_file": "imagenes/alison (2).webp",
+      "original_sha256": "6ed5620a4950895d5aa852677c20d7011d3501910541a405cdaf562b0e76df61",
+      "card": "catalogo-fotos/derivados/5354dfd5025d-alison-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/5354dfd5025d-alison-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/aurora%20(1).jpeg?raw=true": {
+      "original_file": "imagenes/aurora (1).jpeg",
+      "original_sha256": "ed9f4ca79529c9ee6c85d32b81f914b495b85d26a6f47ac4bbdb5b29b63fc27f",
+      "card": "catalogo-fotos/derivados/b299ba5ab731-aurora-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/b299ba5ab731-aurora-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/aurora%20(2).jpeg?raw=true": {
+      "original_file": "imagenes/aurora (2).jpeg",
+      "original_sha256": "d97400e2b938485794838f6f330f6b44db96bf5b7fe0336381e5c1b54fdf7ec8",
+      "card": "catalogo-fotos/derivados/2c383526c524-aurora-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/2c383526c524-aurora-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/body%20musculosa.webp?raw=true": {
+      "original_file": "imagenes/body musculosa.webp",
+      "original_sha256": "572ecd816c68b1e7eb4853020bdb4d66a3c2133fa778a64db3ff32d770c63ad1",
+      "card": "catalogo-fotos/derivados/f7578147d20b-body-musculosa-card.webp",
+      "gallery": "catalogo-fotos/derivados/f7578147d20b-body-musculosa-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/bodyll_osobl2-504790859591b8c97117568194072782-640-0%20(1).webp?raw=true": {
+      "original_file": "imagenes/bodyll_osobl2-504790859591b8c97117568194072782-640-0 (1).webp",
+      "original_sha256": "f5ad513b1f3bc69eb07d9572af1887c5eb5c579232d95d9301e949506ac91065",
+      "card": "catalogo-fotos/derivados/107cd90223e7-bodyll-osobl2-504790859591b8c97117568194072782-640-0-1-card.webp",
+      "gallery": "imagenes/bodyll_osobl2-504790859591b8c97117568194072782-640-0 (1).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/bree%20azul%20(1).webp?raw=true": {
+      "original_file": "imagenes/bree azul (1).webp",
+      "original_sha256": "0de1c2cc4859c0406721f47af3b92f5f3e0bdd50a329e9434b65df8f6870f02d",
+      "card": "catalogo-fotos/derivados/d4a25f05d355-bree-azul-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/d4a25f05d355-bree-azul-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/bree%20azul%20(2).webp?raw=true": {
+      "original_file": "imagenes/bree azul (2).webp",
+      "original_sha256": "8be83847bad693beafce25a80e6e155f8e920e064916eb1df21ae54b6e604ba8",
+      "card": "catalogo-fotos/derivados/66d1bacdba56-bree-azul-2-card.webp",
+      "gallery": "imagenes/bree azul (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/bree%20salmon.webp?raw=true": {
+      "original_file": "imagenes/bree salmon.webp",
+      "original_sha256": "f045833cdf38b04856372faf40b9fde7d1ed5c3a9c8f4439b183163ff2ca152c",
+      "card": "catalogo-fotos/derivados/3c95b75e6efd-bree-salmon-card.webp",
+      "gallery": "catalogo-fotos/derivados/3c95b75e6efd-bree-salmon-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/charlotte%20(1).webp?raw=true": {
+      "original_file": "imagenes/charlotte (1).webp",
+      "original_sha256": "0e7fc36a9e9f687eff0d41c9f163e4c393d8218a2d2f65eaba0465ff9a854d26",
+      "card": "catalogo-fotos/derivados/68a2e206c9da-charlotte-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/68a2e206c9da-charlotte-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/charlotte%20(2).webp?raw=true": {
+      "original_file": "imagenes/charlotte (2).webp",
+      "original_sha256": "49333063128dbbc4a6531fe4eb5bdae05caf9f4d577a37d5dd116431d0cc070f",
+      "card": "catalogo-fotos/derivados/3745f6c8245f-charlotte-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/3745f6c8245f-charlotte-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/conjfkir_vd3-7806e09d7bb34436a717773042876386-240-0.webp?raw=true": {
+      "original_file": "imagenes/conjfkir_vd3-7806e09d7bb34436a717773042876386-240-0.webp",
+      "original_sha256": "c58a031ec40f10a987e3d32f55a47b911902a332a4e77f79616635e0002ecdae",
+      "card": "imagenes/conjfkir_vd3-7806e09d7bb34436a717773042876386-240-0.webp",
+      "gallery": "imagenes/conjfkir_vd3-7806e09d7bb34436a717773042876386-240-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/conjflor_rs-58280cf34e9c5553be17787680933535-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/conjflor_rs-58280cf34e9c5553be17787680933535-1024-1024.webp",
+      "original_sha256": "de5651dcb889159a9a9914f6168de4f44ebbc897c4b7369c2dacf9e8bd715dad",
+      "card": "catalogo-fotos/derivados/87e567e7de9d-conjflor-rs-58280cf34e9c5553be17787680933535-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/87e567e7de9d-conjflor-rs-58280cf34e9c5553be17787680933535-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/conjflor_rs1-8b0bf1c1350854e92d17787680935442-480-0.webp?raw=true": {
+      "original_file": "imagenes/conjflor_rs1-8b0bf1c1350854e92d17787680935442-480-0.webp",
+      "original_sha256": "528dd3f6757ceaa22ce43aa64fd1d24de81e41dad48aeb7b035be88a81fb434f",
+      "card": "catalogo-fotos/derivados/32b78e1d1604-conjflor-rs1-8b0bf1c1350854e92d17787680935442-480-0-card.webp",
+      "gallery": "imagenes/conjflor_rs1-8b0bf1c1350854e92d17787680935442-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/conjflor_vd1-8b2407a396b894661c17773042874314-480-0.webp?raw=true": {
+      "original_file": "imagenes/conjflor_vd1-8b2407a396b894661c17773042874314-480-0.webp",
+      "original_sha256": "f875ae30babc923b2f18a11e0c141674406a84d2dab8ef3210db0a536d441b54",
+      "card": "catalogo-fotos/derivados/9052cd2f4f7f-conjflor-vd1-8b2407a396b894661c17773042874314-480-0-card.webp",
+      "gallery": "imagenes/conjflor_vd1-8b2407a396b894661c17773042874314-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/dsc00145-2-13ddad2dc8b522022717557120021436-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/dsc00145-2-13ddad2dc8b522022717557120021436-1024-1024.webp",
+      "original_sha256": "ee93d9f59f736d37be17ba5be2c48c25f43ab088af47100f1cc17be3658aa631",
+      "card": "catalogo-fotos/derivados/d0617dd59646-dsc00145-2-13ddad2dc8b522022717557120021436-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/d0617dd59646-dsc00145-2-13ddad2dc8b522022717557120021436-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/dsc00253-2-ef4d600fc9576bd55a17557128948659-480-0.webp?raw=true": {
+      "original_file": "imagenes/dsc00253-2-ef4d600fc9576bd55a17557128948659-480-0.webp",
+      "original_sha256": "b2a0c6acab7a835d7d3cae2e2a203df0e3bef3f762510b4010c1e1fd0d419585",
+      "card": "catalogo-fotos/derivados/a612dca8f8b8-dsc00253-2-ef4d600fc9576bd55a17557128948659-480-0-card.webp",
+      "gallery": "imagenes/dsc00253-2-ef4d600fc9576bd55a17557128948659-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/dsc00269-3-f65641b5a7e2d1356617557128939774-480-0.webp?raw=true": {
+      "original_file": "imagenes/dsc00269-3-f65641b5a7e2d1356617557128939774-480-0.webp",
+      "original_sha256": "3062ae016cc3b22fab8a4ed55dc015f434b3a0713fb0178e5b3695d0a1931ae2",
+      "card": "catalogo-fotos/derivados/ba84bc0999f5-dsc00269-3-f65641b5a7e2d1356617557128939774-480-0-card.webp",
+      "gallery": "imagenes/dsc00269-3-f65641b5a7e2d1356617557128939774-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/e509_nena1c-3c159ef6eac5b37d8e17619183860248-480-0.webp?raw=true": {
+      "original_file": "imagenes/e509_nena1c-3c159ef6eac5b37d8e17619183860248-480-0.webp",
+      "original_sha256": "6f28a3c8e6376e0e626b8bd76ca762920f4e8bac776fe9a52ddc4ceacb961013",
+      "card": "catalogo-fotos/derivados/3a003057232a-e509-nena1c-3c159ef6eac5b37d8e17619183860248-480-0-card.webp",
+      "gallery": "imagenes/e509_nena1c-3c159ef6eac5b37d8e17619183860248-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/e509_nena2-42d4ecebce02297dde17619183859989-1024-1024.webp?raw=true": {
+      "original_file": "imagenes/e509_nena2-42d4ecebce02297dde17619183859989-1024-1024.webp",
+      "original_sha256": "5add5068d80898c1a138ade74cc101d3e85d0c500074626b6c8515e9a49eca0d",
+      "card": "catalogo-fotos/derivados/00ba4353c273-e509-nena2-42d4ecebce02297dde17619183859989-1024-1024-card.webp",
+      "gallery": "catalogo-fotos/derivados/00ba4353c273-e509-nena2-42d4ecebce02297dde17619183859989-1024-1024-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/enterito%20azul.webp?raw=true": {
+      "original_file": "imagenes/enterito azul.webp",
+      "original_sha256": "dfb0a495500594884011e27e8eea9ad6de0c1e0915d6feff1b899553699e5688",
+      "card": "catalogo-fotos/derivados/ceb6790e1eee-enterito-azul-card.webp",
+      "gallery": "imagenes/enterito azul.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/enterito%20verde.webp?raw=true": {
+      "original_file": "imagenes/enterito verde.webp",
+      "original_sha256": "158bee7c9b7a650f090e16e7d32b54d7d90f5bfb0d721568d3568b2687b048e8",
+      "card": "catalogo-fotos/derivados/b2b3fa559143-enterito-verde-card.webp",
+      "gallery": "catalogo-fotos/derivados/b2b3fa559143-enterito-verde-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/gamuza%20vi%C3%B1a.webp?raw=true": {
+      "original_file": "imagenes/gamuza viña.webp",
+      "original_sha256": "4e25979c22cf0002b1fd970139a7eb54ab9780f03885ff81ef4455e148fb81cd",
+      "card": "catalogo-fotos/derivados/4ca4e159e1fd-gamuza-vina-card.webp",
+      "gallery": "imagenes/gamuza viña.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/genero%20aero.webp?raw=true": {
+      "original_file": "imagenes/genero aero.webp",
+      "original_sha256": "271f1dd52774fdb75fe702e73877b978b90e2181c3ee8f6584b3bf19cb37bb05",
+      "card": "catalogo-fotos/derivados/b91fecbf0eec-genero-aero-card.webp",
+      "gallery": "catalogo-fotos/derivados/b91fecbf0eec-genero-aero-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/genero%20aqua.jpeg?raw=true": {
+      "original_file": "imagenes/genero aqua.jpeg",
+      "original_sha256": "d29a4a1fdce08e24f5aaaf9b3686e3923e4d4ab92b4f6d0f1971970df0f3d90e",
+      "card": "catalogo-fotos/derivados/297b5ac945cd-genero-aqua-card.webp",
+      "gallery": "catalogo-fotos/derivados/297b5ac945cd-genero-aqua-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/genero%20cemento.jpeg?raw=true": {
+      "original_file": "imagenes/genero cemento.jpeg",
+      "original_sha256": "a5671d44e5d24da0792735928a242942b40bec69a8187ddcf0d695c9e79465b9",
+      "card": "catalogo-fotos/derivados/f2f3cf990aaf-genero-cemento-card.webp",
+      "gallery": "catalogo-fotos/derivados/f2f3cf990aaf-genero-cemento-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/genero%20tostado.webp?raw=true": {
+      "original_file": "imagenes/genero tostado.webp",
+      "original_sha256": "20546a4df6cbde857e972404a74c593fc797e5aed4716cb4cc217fb37f0595b6",
+      "card": "catalogo-fotos/derivados/b1f9273d8344-genero-tostado-card.webp",
+      "gallery": "imagenes/genero tostado.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/hilary%20tostado%20(1).webp?raw=true": {
+      "original_file": "imagenes/hilary tostado (1).webp",
+      "original_sha256": "141b9ff5c3a0ea8a9b9bb2038364d07854498e198527f401cba8da335a12473f",
+      "card": "catalogo-fotos/derivados/636bc2302cc0-hilary-tostado-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/636bc2302cc0-hilary-tostado-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/hilary%20tostado%20(2).webp?raw=true": {
+      "original_file": "imagenes/hilary tostado (2).webp",
+      "original_sha256": "7b975a08f347b719939d9b280e260b6f1e03f3bd68d9b6337ec1e5feb34c29d9",
+      "card": "catalogo-fotos/derivados/665d24de7323-hilary-tostado-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/665d24de7323-hilary-tostado-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/jardinero%20sara%20(1).jpeg?raw=true": {
+      "original_file": "imagenes/jardinero sara (1).jpeg",
+      "original_sha256": "bdb8244b6c5f1f949a4be442f83a0d4a7ddb9309001ed2840e13cc037284a8e1",
+      "card": "catalogo-fotos/derivados/9800f0d74d12-jardinero-sara-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/9800f0d74d12-jardinero-sara-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/jardinero%20sara%20(2).jpeg?raw=true": {
+      "original_file": "imagenes/jardinero sara (2).jpeg",
+      "original_sha256": "a3a3231ee6756a863d27eac17746de6222fefd1fe6965bd13f033d151395e1e0",
+      "card": "catalogo-fotos/derivados/8c3481627dc8-jardinero-sara-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/8c3481627dc8-jardinero-sara-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/lena%20rosa%20(1).webp?raw=true": {
+      "original_file": "imagenes/lena rosa (1).webp",
+      "original_sha256": "c9e3f2cb6497ae23ca83a48b234e55a60e824cbe0f7a2e8761c28e22f812ff99",
+      "card": "catalogo-fotos/derivados/66a223842849-lena-rosa-1-card.webp",
+      "gallery": "imagenes/lena rosa (1).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/lena%20rosa%20(2).webp?raw=true": {
+      "original_file": "imagenes/lena rosa (2).webp",
+      "original_sha256": "a79820944c3a1df419a740f5ac7a64d9bda0071b726bbb908e3aef7558172281",
+      "card": "catalogo-fotos/derivados/00a1b1ca727c-lena-rosa-2-card.webp",
+      "gallery": "imagenes/lena rosa (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/little%20blanco.webp?raw=true": {
+      "original_file": "imagenes/little blanco.webp",
+      "original_sha256": "579c06401d58fce625f811665b5bb79d403c43828447be0a32344dc960c0c67a",
+      "card": "catalogo-fotos/derivados/43d3890aa6fc-little-blanco-card.webp",
+      "gallery": "imagenes/little blanco.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/mateo%20puntos.jpeg?raw=true": {
+      "original_file": "imagenes/mateo puntos.jpeg",
+      "original_sha256": "167eb9dc21a105914982c8557e43b68d776850a0940b61f79f635671a68684a7",
+      "card": "catalogo-fotos/derivados/f1d8b564b8da-mateo-puntos-card.webp",
+      "gallery": "catalogo-fotos/derivados/f1d8b564b8da-mateo-puntos-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/mateo%20rayas.jpeg?raw=true": {
+      "original_file": "imagenes/mateo rayas.jpeg",
+      "original_sha256": "00294da88a05a7439f63d8e1dd5e8d2f6d7fb3cf8c6195e1656e420d75ae5f7b",
+      "card": "catalogo-fotos/derivados/133eac4d6d1b-mateo-rayas-card.webp",
+      "gallery": "catalogo-fotos/derivados/133eac4d6d1b-mateo-rayas-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/mateo%20robot.webp?raw=true": {
+      "original_file": "imagenes/mateo robot.webp",
+      "original_sha256": "0350c02c168ccbe7b71b64d96beb721514809e73ebe41c81b1c4599be5e146c1",
+      "card": "catalogo-fotos/derivados/b6e8323e657c-mateo-robot-card.webp",
+      "gallery": "catalogo-fotos/derivados/b6e8323e657c-mateo-robot-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/nataniel%20natural%20perrito.webp?raw=true": {
+      "original_file": "imagenes/nataniel natural perrito.webp",
+      "original_sha256": "2655b11ca64daf86c4a35adf87124206405294d6bedf0652f731461ba679dd19",
+      "card": "catalogo-fotos/derivados/1ebc29045771-nataniel-natural-perrito-card.webp",
+      "gallery": "catalogo-fotos/derivados/1ebc29045771-nataniel-natural-perrito-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/nataniel%20vi%C3%B1a.jpeg?raw=true": {
+      "original_file": "imagenes/nataniel viña.jpeg",
+      "original_sha256": "e2dbfa344ebd38f5432b64ea9c164bd812e8fb4680a31cc2196e906f17a91ca7",
+      "card": "catalogo-fotos/derivados/c61ec84a254b-nataniel-vina-card.webp",
+      "gallery": "catalogo-fotos/derivados/c61ec84a254b-nataniel-vina-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/negro.jpeg?raw=true": {
+      "original_file": "imagenes/negro.jpeg",
+      "original_sha256": "007f56c2d46ed69af98a9b6f7803f399f76ed8f6387ccb51c3696a3973149680",
+      "card": "catalogo-fotos/derivados/00b149dbb5ad-negro-card.webp",
+      "gallery": "catalogo-fotos/derivados/00b149dbb5ad-negro-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/nf601728-1-7364d8ec7f5326d1b517528449267772-480-0.webp?raw=true": {
+      "original_file": "imagenes/nf601728-1-7364d8ec7f5326d1b517528449267772-480-0.webp",
+      "original_sha256": "0cee9d04cb2dc83c9ed2ae6b546b6014d19f136be2db73974dcc8ce0b4a65ecb",
+      "card": "catalogo-fotos/derivados/ee59f142d99c-nf601728-1-7364d8ec7f5326d1b517528449267772-480-0-card.webp",
+      "gallery": "imagenes/nf601728-1-7364d8ec7f5326d1b517528449267772-480-0.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/osito%20gris%20(1).webp?raw=true": {
+      "original_file": "imagenes/osito gris (1).webp",
+      "original_sha256": "0a729cf3b2a748208a700c93528dc63eda001a6150f582651233b204acafdf4f",
+      "card": "catalogo-fotos/derivados/340d4c15ee53-osito-gris-1-card.webp",
+      "gallery": "catalogo-fotos/derivados/340d4c15ee53-osito-gris-1-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/osito%20gris%20(2).webp?raw=true": {
+      "original_file": "imagenes/osito gris (2).webp",
+      "original_sha256": "007040a53e0cec40be2fa4d7c824752641d0eed4edf37853246e14a978d659ce",
+      "card": "catalogo-fotos/derivados/ea0fb000284b-osito-gris-2-card.webp",
+      "gallery": "catalogo-fotos/derivados/ea0fb000284b-osito-gris-2-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/osito%20mostaza.webp?raw=true": {
+      "original_file": "imagenes/osito mostaza.webp",
+      "original_sha256": "ff47ebc9c173828e3b7864b324646148bae8d255f12af6d50c1058ae60db15bf",
+      "card": "catalogo-fotos/derivados/64fbf548f8f6-osito-mostaza-card.webp",
+      "gallery": "catalogo-fotos/derivados/64fbf548f8f6-osito-mostaza-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/primeros%20dias.jpg?raw=true": {
+      "original_file": "imagenes/primeros dias.jpg",
+      "original_sha256": "c8ef77ae2e9884388dc412e44293c5f6e9e5d2c86692bfa2cb3646caba32ad16",
+      "card": "catalogo-fotos/derivados/06851dab6994-primeros-dias-card.webp",
+      "gallery": "catalogo-fotos/derivados/06851dab6994-primeros-dias-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/pupy%20(1).webp?raw=true": {
+      "original_file": "imagenes/pupy (1).webp",
+      "original_sha256": "42301e1e1d68f3d15eef3599f20bb7fa1a43a676b871ee04c3e18966a829c859",
+      "card": "catalogo-fotos/derivados/7ad57127f12d-pupy-1-card.webp",
+      "gallery": "imagenes/pupy (1).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/pupy%20(2).webp?raw=true": {
+      "original_file": "imagenes/pupy (2).webp",
+      "original_sha256": "e7a30efa19edd86cbdab70e4edeb78d08fda2b46412710c7e3762c813387c29d",
+      "card": "catalogo-fotos/derivados/1027baf647f1-pupy-2-card.webp",
+      "gallery": "imagenes/pupy (2).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/pupy%20(3).webp?raw=true": {
+      "original_file": "imagenes/pupy (3).webp",
+      "original_sha256": "b45f64cd579f2f7f4062b396ead5f7aa8680827df997ee70c0126d3e36aa124e",
+      "card": "catalogo-fotos/derivados/0bcbec45f742-pupy-3-card.webp",
+      "gallery": "imagenes/pupy (3).webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/sandy%20amarillo%20varon.webp?raw=true": {
+      "original_file": "imagenes/sandy amarillo varon.webp",
+      "original_sha256": "7c8fa1e7e51e127ed6425d645d9f7a8e752034b2a8eca74108d33ec31119c655",
+      "card": "catalogo-fotos/derivados/66116d5bda26-sandy-amarillo-varon-card.webp",
+      "gallery": "imagenes/sandy amarillo varon.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/sandy%20rosa%20tiger.webp?raw=true": {
+      "original_file": "imagenes/sandy rosa tiger.webp",
+      "original_sha256": "cb478a8529a3463d45fe4385a4d3416f8a4e98281f89113f99caec1dbb2d49a4",
+      "card": "catalogo-fotos/derivados/7f49431fb779-sandy-rosa-tiger-card.webp",
+      "gallery": "catalogo-fotos/derivados/7f49431fb779-sandy-rosa-tiger-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/sandy%20vi%C3%B1a%20varon.webp?raw=true": {
+      "original_file": "imagenes/sandy viña varon.webp",
+      "original_sha256": "569dd8d0ddd38f7f0706cfce192a9380b589fd6a9a38c4ce3bb4325fd5acfe8c",
+      "card": "catalogo-fotos/derivados/e127e23951d0-sandy-vina-varon-card.webp",
+      "gallery": "catalogo-fotos/derivados/e127e23951d0-sandy-vina-varon-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/short%20aero.jpeg?raw=true": {
+      "original_file": "imagenes/short aero.jpeg",
+      "original_sha256": "9ff3eb31c7f530f5a56c8d4671957f7bfbb6691d167c314c5f5bcdb34091a12f",
+      "card": "catalogo-fotos/derivados/e7367a2cfebb-short-aero-card.webp",
+      "gallery": "catalogo-fotos/derivados/e7367a2cfebb-short-aero-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/short%20beige.jpeg?raw=true": {
+      "original_file": "imagenes/short beige.jpeg",
+      "original_sha256": "80453c2b30f41fa2b440984166ad0c419d5392608982472b977547be26595931",
+      "card": "catalogo-fotos/derivados/00ec3e7f9e98-short-beige-card.webp",
+      "gallery": "catalogo-fotos/derivados/00ec3e7f9e98-short-beige-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/short%20floral.jpeg?raw=true": {
+      "original_file": "imagenes/short floral.jpeg",
+      "original_sha256": "233c8324488cea8376f54e84217526007fbccacd71fa489251507c567f826807",
+      "card": "catalogo-fotos/derivados/22d45d847bb0-short-floral-card.webp",
+      "gallery": "catalogo-fotos/derivados/22d45d847bb0-short-floral-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/short%20mostaza.jpeg?raw=true": {
+      "original_file": "imagenes/short mostaza.jpeg",
+      "original_sha256": "6f4efb04db46e30d9cabcdd94d368598aebdca4bac80ceedcbe26c61337b2eca",
+      "card": "catalogo-fotos/derivados/851c8978e6a1-short-mostaza-card.webp",
+      "gallery": "catalogo-fotos/derivados/851c8978e6a1-short-mostaza-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/short%20orquidea.jpeg?raw=true": {
+      "original_file": "imagenes/short orquidea.jpeg",
+      "original_sha256": "6d6faaff341769abd6778583ad776c840a09668dbef2922e6adc4906dfa52fc2",
+      "card": "catalogo-fotos/derivados/9bb658d83b89-short-orquidea-card.webp",
+      "gallery": "catalogo-fotos/derivados/9bb658d83b89-short-orquidea-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/tiger%20beige.webp?raw=true": {
+      "original_file": "imagenes/tiger beige.webp",
+      "original_sha256": "6244d3a12ff99360cc20ea246e860fe9a31072897f5af877c024c1d85f2b1e68",
+      "card": "catalogo-fotos/derivados/f03017355d7d-tiger-beige-card.webp",
+      "gallery": "catalogo-fotos/derivados/f03017355d7d-tiger-beige-gallery.webp"
+    },
+    "https://raw.githubusercontent.com/magicoamorbebe-bot/magicoamor/main/imagenes/tiger%20blanco.jpeg?raw=true": {
+      "original_file": "imagenes/tiger blanco.jpeg",
+      "original_sha256": "ea538a7cb062b89e5a83cc71781593ad31c10be53c58b9854c00c885af3baa7c",
+      "card": "catalogo-fotos/derivados/3038e7be5bbd-tiger-blanco-card.webp",
+      "gallery": "catalogo-fotos/derivados/3038e7be5bbd-tiger-blanco-gallery.webp"
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/16333c8a-edf0-4f04-a0b4-aae3c5070f69.jpg?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/16333c8a-edf0-4f04-a0b4-aae3c5070f69.jpg?raw=true",
+      "original_sha256": "c089b61abaae94ad4b1be476766661fe5aa24895ebc3440e43fd51444d71aeea",
+      "card": "catalogo-fotos/derivados/5ff14efad46d-remote-card.webp",
+      "card_meta": {
+        "bytes": 14146,
+        "width": 360,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 37.85,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/5ff14efad46d-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 105722,
+        "width": 900,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 39.27,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/255f4410-b4d9-4130-9fe0-6d0f83e45efc.jpg?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/255f4410-b4d9-4130-9fe0-6d0f83e45efc.jpg?raw=true",
+      "original_sha256": "023e283c50d7307a579ca459b364bcadf7aec9b3dd4aff883b5577073ac44fe2",
+      "card": "catalogo-fotos/derivados/fbb7b955f2f4-remote-card.webp",
+      "card_meta": {
+        "bytes": 11334,
+        "width": 360,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 40.14,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/fbb7b955f2f4-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 92830,
+        "width": 900,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 39.78,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/7bb90bb0-88d1-4e56-b319-76dedfc4702c.jpg?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/7bb90bb0-88d1-4e56-b319-76dedfc4702c.jpg?raw=true",
+      "original_sha256": "d5022b85e3381b4c4be6e47caae6b728adb808bb65588d39f3fabb0b21cbd146",
+      "card": "catalogo-fotos/derivados/22cbad63c01c-remote-card.webp",
+      "card_meta": {
+        "bytes": 13870,
+        "width": 360,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 39.6,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/22cbad63c01c-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 105786,
+        "width": 900,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 39.68,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Florencia%20(1).webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Florencia%20(1).webp?raw=true",
+      "original_sha256": "33b21a0748ff1316032c773b1b48f526320255e54e0032893c511589d2444693",
+      "card": "catalogo-fotos/derivados/fa0c0e62fcb2-remote-card.webp",
+      "card_meta": {
+        "bytes": 26190,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 37.27,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/fa0c0e62fcb2-remote-gallery.webp",
+      "gallery_meta": {
+        "reused_remote_webp": true,
+        "bytes": 80530,
+        "width": 480,
+        "height": 716,
+        "format": "WEBP"
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Florencia%20(2).webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Florencia%20(2).webp?raw=true",
+      "original_sha256": "2a43a8679e902a27c7737247008d4a842b876b9756e5e369fdc4f9816781d47b",
+      "card": "catalogo-fotos/derivados/d8b465a523c9-remote-card.webp",
+      "card_meta": {
+        "bytes": 16582,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 38.93,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/d8b465a523c9-remote-gallery.webp",
+      "gallery_meta": {
+        "reused_remote_webp": true,
+        "bytes": 48400,
+        "width": 480,
+        "height": 716,
+        "format": "WEBP"
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Wild%20(1).webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Wild%20(1).webp?raw=true",
+      "original_sha256": "4f6bcf5610d6b0e69994a0035be637e14f7ba15a9eaa68754fa9cd17e82dd558",
+      "card": "catalogo-fotos/derivados/aa88a372c02e-remote-card.webp",
+      "card_meta": {
+        "bytes": 16858,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 38.11,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/aa88a372c02e-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 161198,
+        "width": 805,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 38.08,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Wild%20(2).webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20Wild%20(2).webp?raw=true",
+      "original_sha256": "d3e8e07aac7172e674e373dae09fde3d7b4364f767b271028e3f07115678f707",
+      "card": "catalogo-fotos/derivados/01cda637ffff-remote-card.webp",
+      "card_meta": {
+        "bytes": 6902,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 42.13,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/01cda637ffff-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 26778,
+        "width": 805,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 43.89,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20con%20Broches%20celeste.webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20con%20Broches%20celeste.webp?raw=true",
+      "original_sha256": "cfe30c777a4bea78e383972f63c9cdd546968eb91c1ded4f5d677a482ae68606",
+      "card": "catalogo-fotos/derivados/3121ef91dbf8-remote-card.webp",
+      "card_meta": {
+        "bytes": 8036,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 40.84,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/3121ef91dbf8-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 38424,
+        "width": 805,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 41.84,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20con%20broches%20blanco.webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Body%20con%20broches%20blanco.webp?raw=true",
+      "original_sha256": "852170a4971998c4f7a3a511427699e901487675f0563934dbd7ff629297cfc9",
+      "card": "catalogo-fotos/derivados/40936bc6c448-remote-card.webp",
+      "card_meta": {
+        "bytes": 5070,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 43.39,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/40936bc6c448-remote-gallery.webp",
+      "gallery_meta": {
+        "reused_remote_webp": true,
+        "bytes": 20808,
+        "width": 480,
+        "height": 716,
+        "format": "WEBP"
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Aero%20(2).jpeg?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Aero%20(2).jpeg?raw=true",
+      "original_sha256": "c2f6a21d87fd4c96323694c7c6d696291b8601b8e0eb169d30341a2f06b02077",
+      "card": "catalogo-fotos/derivados/e4b4c1b7e881-remote-card.webp",
+      "card_meta": {
+        "bytes": 26508,
+        "width": 361,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 36.84,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/e4b4c1b7e881-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 167458,
+        "width": 903,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 38.25,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Aero%20(3).jpeg?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Aero%20(3).jpeg?raw=true",
+      "original_sha256": "80b9d376d6f4ddcdf22edb4f76ec341404d063373f964cc23fd3094574bd948a",
+      "card": "catalogo-fotos/derivados/9eb4511ef8dd-remote-card.webp",
+      "card_meta": {
+        "bytes": 16880,
+        "width": 361,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 37.69,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/9eb4511ef8dd-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 94616,
+        "width": 903,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 39.52,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Aero%20(4).jpeg?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Aero%20(4).jpeg?raw=true",
+      "original_sha256": "f34d3312b76008ea89eff1574c9488060dd7180ded6f0ae2ba614dd3156aa83f",
+      "card": "catalogo-fotos/derivados/5acce3c7f527-remote-card.webp",
+      "card_meta": {
+        "bytes": 23026,
+        "width": 361,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 37.31,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/5acce3c7f527-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 167846,
+        "width": 903,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 37.39,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Beige%20(1).webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Beige%20(1).webp?raw=true",
+      "original_sha256": "8d20b56c3000014997649f6edd30fed04293fb2b6f3676e6f3a85670e8fc76c5",
+      "card": "catalogo-fotos/derivados/887f18aca7db-remote-card.webp",
+      "card_meta": {
+        "bytes": 17034,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 38.3,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/887f18aca7db-remote-gallery.webp",
+      "gallery_meta": {
+        "reused_remote_webp": true,
+        "bytes": 91214,
+        "width": 480,
+        "height": 716,
+        "format": "WEBP"
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Beige%20(2).webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Beige%20(2).webp?raw=true",
+      "original_sha256": "fdd1994d9430a58ea10e10471b78b52dff5bfc422824b98f4a3ceb300adc8c41",
+      "card": "catalogo-fotos/derivados/808db492a909-remote-card.webp",
+      "card_meta": {
+        "bytes": 19622,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 38.15,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/808db492a909-remote-gallery.webp",
+      "gallery_meta": {
+        "bytes": 106290,
+        "width": 804,
+        "height": 1200,
+        "quality": 84,
+        "psnr_db": 39.21,
+        "reused_existing": false,
+        "target_exceeded": false
+      }
+    },
+    "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Beige%20(3).webp?raw=true": {
+      "original_file": null,
+      "original_url": "https://github.com/magicoamorbebe-bot/magicoamor/blob/main/imagenes/Conjunto%20Arturo%20Beige%20(3).webp?raw=true",
+      "original_sha256": "81893461cf1b626729fcf7519ecc8b01afbc3b96c4fc49a95a5e3218de620709",
+      "card": "catalogo-fotos/derivados/0c323c4877c0-remote-card.webp",
+      "card_meta": {
+        "bytes": 30364,
+        "width": 322,
+        "height": 480,
+        "quality": 84,
+        "psnr_db": 37.02,
+        "reused_existing": false,
+        "target_exceeded": false
+      },
+      "gallery": "catalogo-fotos/derivados/0c323c4877c0-remote-gallery.webp",
+      "gallery_meta": {
+        "reused_remote_webp": true,
+        "bytes": 116316,
+        "width": 480,
+        "height": 716,
+        "format": "WEBP"
+      }
+    }
+  },
+  "generator": "tools/optimize_remote_catalog_images.py",
+  "settings": {
+    "card": {
+      "max_dimension": 480,
+      "target_bytes": 100000,
+      "min_psnr_db": 36.0
+    },
+    "gallery": {
+      "max_dimension": 1200,
+      "target_bytes": 280000,
+      "min_psnr_db": 38.0
+    }
+  }
+}
