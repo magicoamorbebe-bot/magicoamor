@@ -9,6 +9,8 @@
 <link rel="canonical" href="https://magicoamor.com.ar/tienda.html">
 <link rel="icon" type="image/png" href="logo.png">
 <meta name="theme-color" content="#C9A040">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
 <link rel="preconnect" href="https://script.google.com">
 <!-- Open Graph: vista previa con foto al compartir el link por WhatsApp/Instagram/Facebook -->
 <meta property="og:type" content="website">
@@ -430,7 +432,7 @@ SECCIÓN EXPERIENCIAS (al final del catálogo)
 </footer>
 
 <!-- Botón WhatsApp -->
-<a class="whatsapp-fab" href="https://wa.me/5493425164672?text=Hola%20M%C3%A1gico%20Amor!%20Vi%20la%20tienda%20y%20quiero%20consultar%20%F0%9F%92%9B" target="_blank" aria-label="WhatsApp" onclick="window.fbq&&fbq('track','Contact')">
+<a class="whatsapp-fab" href="https://wa.me/5493425164672?text=Hola%20M%C3%A1gico%20Amor!%20Vi%20la%20tienda%20y%20quiero%20consultar%20%F0%9F%92%9B" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" onclick="window.fbq&&fbq('track','Contact')">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.523 5.854L.057 23.885a.5.5 0 0 0 .611.61l6.089-1.456A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.878 9.878 0 0 1-5.031-1.378l-.36-.214-3.733.893.924-3.638-.235-.374A9.861 9.861 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106S21.894 6.533 21.894 12 17.467 21.894 12 21.894z"/></svg>
 </a>
 
@@ -561,17 +563,15 @@ function prevCard(){goCard((cardIdx-1+TESTIMONIOS.length)%TESTIMONIOS.length);}
 setInterval(function(){nextCard();},5000);
 
 // ── FORMULARIO EXPERIENCIA ────────────────────────
-async function enviarExperiencia(){
-if(PREVIEW_MODE){alert('Vista previa: envíos deshabilitados.');return;}
+function enviarExperiencia(){
 const nombre=document.getElementById('ef-nombre').value.trim();
 const rol=document.getElementById('ef-rol').value.trim();
 const texto=document.getElementById('ef-texto').value.trim();
 if(!nombre||!rol||!texto){alert('Completá todos los campos 💛');return;}
 const btn=document.getElementById('ef-btn');
-btn.textContent='Enviando...';btn.disabled=true;
-try{
-await fetch(API,{method:'POST',body:JSON.stringify({action:'addTestimonio',nombre,rol,texto})});
-}catch(e){}
+btn.textContent='Abriendo WhatsApp...';btn.disabled=true;
+const mensaje=encodeURIComponent('Hola Agus, quiero compartir mi experiencia en Mágico Amor 💛\n\nNombre: '+nombre+'\nVínculo: '+rol+'\nExperiencia: '+texto);
+window.open('https://wa.me/5493425164672?text='+mensaje,'_blank','noopener,noreferrer');
 document.getElementById('ef-nombre').value='';
 document.getElementById('ef-rol').value='';
 document.getElementById('ef-texto').value='';
@@ -588,6 +588,25 @@ try{await emailjs.send(EJS_SERVICE_ID,EJS_TEMPLATE_ID,p);}catch(e){}
 }
 
 function wait(ms){return new Promise(function(resolve){setTimeout(resolve,ms);});}
+
+function escapeHtml(value){
+return String(value??'').replace(/[&<>'"]/g,function(char){return({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'})[char];});
+}
+
+function safeText(value,maxLength){
+return String(value??'').replace(/[<>"'`\\]/g,'').replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,maxLength||160);
+}
+
+function safeImageUrl(value){
+if(typeof value!=='string')return'';
+const candidate=value.trim();
+if(!candidate)return'';
+try{const parsed=new URL(candidate,document.baseURI);return parsed.protocol==='https:'?candidate:'';}catch(e){return'';}
+}
+
+function safeColor(value){
+return typeof value==='string'&&/^#[0-9a-f]{3,8}$/i.test(value.trim())?value.trim():'#F8F3E8';
+}
 
 async function fetchProductsOnce(){
 const controller=new AbortController();
@@ -674,14 +693,18 @@ if(typeof raw.price!=='number'||!Number.isFinite(raw.price))return null;
 if(!raw.sizes||typeof raw.sizes!=='object'||Array.isArray(raw.sizes))return null;
 const sizeEntries=Object.entries(raw.sizes);
 if(!sizeEntries.length||sizeEntries.some(function(entry){return typeof entry[1]!=='number'||!Number.isFinite(entry[1])||entry[1]<0;}))return null;
+const sizes={};
+sizeEntries.forEach(function(entry){const key=safeText(entry[0],20);if(key)sizes[key]=Math.floor(entry[1]);});
+if(!Object.keys(sizes).length)return null;
 const fotos=[];
-if(Array.isArray(raw.fotos))raw.fotos.forEach(function(url){if(typeof url==='string'&&url.trim()&&!fotos.includes(url.trim()))fotos.push(url.trim());});
-const foto=typeof raw.foto==='string'?raw.foto.trim():'';
+if(Array.isArray(raw.fotos))raw.fotos.forEach(function(url){const safe=safeImageUrl(url);if(safe&&!fotos.includes(safe))fotos.push(safe);});
+const foto=safeImageUrl(raw.foto);
 if(foto&&!fotos.includes(foto))fotos.unshift(foto);
 return Object.assign({},raw,{
-name:raw.name.trim(),cat:raw.cat.trim(),foto:foto,fotos:fotos,
-emoji:typeof raw.emoji==='string'&&raw.emoji.trim()?raw.emoji:'🧸',
-bg:typeof raw.bg==='string'&&raw.bg.trim()?raw.bg:'#F8F3E8',
+name:safeText(raw.name,120),cat:safeText(raw.cat,60),foto:foto,fotos:fotos,sizes:sizes,
+material:safeText(raw.material,100),tag:safeText(raw.tag,60),
+emoji:typeof raw.emoji==='string'&&raw.emoji.trim()?safeText(raw.emoji,8):'🧸',
+bg:safeColor(raw.bg),
 _sourceIndex:index
 });
 }
@@ -931,7 +954,7 @@ if(window.gtag)gtag('event','begin_checkout');
 let selPay='';
 function render(){
 const n=document.getElementById('co-name'),ph=document.getElementById('co-phone'),ad=document.getElementById('co-addr'),no=document.getElementById('co-notes');
-const prev={name:n?n.value:'',phone:ph?ph.value:'',addr:ad?ad.value:'',notes:no?no.value:''};
+const prev={name:n?escapeHtml(n.value):'',phone:ph?escapeHtml(ph.value):'',addr:ad?escapeHtml(ad.value):'',notes:no?escapeHtml(no.value):''};
 const pays=['Transferencia','Mercado Pago','Efectivo','Tarjeta'];
 const pb=pays.map(function(m){return'<button class="pay-opt'+(selPay===m?' selected':'')+'" onclick="setPay(\''+m+'\')">'+m+'</button>';}).join('');
 document.getElementById('modal-root').innerHTML='<div class="modal-bg" onclick="if(event.target===this)closeModal()"><div class="checkout-modal"><button class="cart-modal-close" onclick="closeModal()">×</button><div style="text-align:center;font-size:28px;margin-bottom:8px">📦</div><h2 style="text-align:center;margin-bottom:14px">Datos del pedido</h2><div class="field-label">Nombre y apellido *</div><input id="co-name" placeholder="Ej: María González" value="'+prev.name+'"><div class="field-label">Teléfono / WhatsApp *</div><input id="co-phone" placeholder="Ej: 03564-15000000" value="'+prev.phone+'"><div class="field-label">Dirección de entrega *</div><input id="co-addr" placeholder="Calle, número, localidad" value="'+prev.addr+'"><div class="field-label">Forma de pago *</div><div class="pay-grid">'+pb+'</div><div class="field-label">Notas (opcional)</div><textarea id="co-notes" placeholder="Es para regalo, necesito bolsa...">'+prev.notes+'</textarea><button class="confirm-btn" onclick="confirmOrder()">✓ Confirmar pedido</button><p style="font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5">🔒 Al confirmar <strong>no pagás nada todavía</strong>: te escribimos por WhatsApp para coordinar el pago y el envío.</p></div></div>';
@@ -941,33 +964,21 @@ window.confirmOrder=async function(){
 if(PREVIEW_MODE){alert('Vista previa: pedidos deshabilitados.');return;}
 const name=document.getElementById('co-name').value.trim(),phone=document.getElementById('co-phone').value.trim(),addr=document.getElementById('co-addr').value.trim(),notes=document.getElementById('co-notes').value.trim();
 if(!name||!phone||!addr||!selPay){alert('Completá todos los campos (*)');return;}
-document.getElementById('modal-root').innerHTML='<div class="modal-bg"><div class="checkout-modal" style="text-align:center;padding:40px"><div class="spinner" style="margin:0 auto 12px"></div><p style="color:var(--muted);font-size:13px">Confirmando y actualizando stock...</p></div></div>';
-try{await fetch(API,{method:'POST',body:JSON.stringify({action:'updateStock',items:cart.map(function(c){return{rowIndex:c.rowIndex,size:c.size,qty:c.qty};})})});}catch(e){}
-cart.forEach(function(c){const p=PRODUCTS.find(function(x){return x.id===c.id;});if(p&&p.sizes[c.size]!==undefined)p.sizes[c.size]-=c.qty;});
+document.getElementById('modal-root').innerHTML='<div class="modal-bg"><div class="checkout-modal" style="text-align:center;padding:40px"><div class="spinner" style="margin:0 auto 12px"></div><p style="color:var(--muted);font-size:13px">Preparando tu solicitud...</p></div></div>';
 const now=new Date(),fecha=now.toLocaleDateString('es-AR',{day:'2-digit',month:'2-digit',year:'numeric'}),hora=now.toLocaleTimeString('es-AR',{hour:'2-digit',minute:'2-digit'}),total=cart.reduce(function(a,c){return a+c.price*c.qty;},0);
 sendOrderEmail({to_email:'magicoamor.bebe@gmail.com',fecha:fecha+' '+hora,cliente:name,telefono:phone,direccion:addr,pago:selPay,notas:notes||'—',productos:cart.map(function(c){return c.emoji+' '+c.name+' | Talle: '+c.size+' | Cant: '+c.qty+' | $'+(c.price*c.qty).toLocaleString('es-AR');}).join('\n'),total:'$'+total.toLocaleString('es-AR')});
 const fn=name.split(' ')[0];
 if(window.fbq)fbq('track','Lead',{value:total,currency:'ARS'});
 if(window.gtag)gtag('event','generate_lead',{currency:'ARS',value:total});
 const waMsg=encodeURIComponent('Hola! Soy '+name+' 😊 Acabo de hacer un pedido en la tienda:\n'+cart.map(function(c){return'• '+c.name+' (Talle '+c.size+') x'+c.qty;}).join('\n')+'\nTotal: $'+total.toLocaleString('es-AR')+' — '+selPay);
-document.getElementById('modal-root').innerHTML='<div class="modal-bg"><div class="checkout-modal" style="text-align:center;padding:36px 28px"><div style="font-size:56px;margin-bottom:12px">🎀</div><h2 style="font-size:20px;margin-bottom:12px;color:var(--gold-dk)">¡Listo, '+fn+'! Recibimos tu pedido</h2><div style="background:var(--gold-lt);border-radius:12px;padding:14px;font-size:12px;color:var(--gold-dk);margin-bottom:14px;text-align:left;line-height:1.8"><strong>Resumen:</strong><br>'+cart.map(function(c){return'• '+c.name+' (Talle '+c.size+') x'+c.qty;}).join('<br>')+'<br><br><strong>Total: $'+total.toLocaleString('es-AR')+'</strong> — '+selPay+'</div><div style="text-align:left;font-size:12.5px;color:var(--text);line-height:1.9;margin-bottom:16px"><strong>¿Qué sigue?</strong><br>1️⃣ Agus te escribe por WhatsApp hoy mismo para confirmar los talles<br>2️⃣ Coordinan el pago como te quede más cómodo (transferencia o Mercado Pago)<br>3️⃣ Preparamos tu pedido con amor y te lo enviamos 💛</div><a href="https://wa.me/5493425164672?text='+waMsg+'" target="_blank" onclick="window.fbq&&fbq(\'track\',\'Contact\')" style="display:block;width:100%;padding:13px;border-radius:10px;background:#25D366;color:#fff;text-decoration:none;font-size:13px;font-weight:700;margin-bottom:10px;box-sizing:border-box">📲 ¿Querés adelantarte? Escribinos ahora</a><button style="width:100%;padding:12px;border-radius:10px;background:var(--gold);color:#fff;border:none;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit" onclick="closeModal();loadProducts()">Seguir comprando</button></div></div>';
+document.getElementById('modal-root').innerHTML='<div class="modal-bg"><div class="checkout-modal" style="text-align:center;padding:36px 28px"><div style="font-size:56px;margin-bottom:12px">🎀</div><h2 style="font-size:20px;margin-bottom:12px;color:var(--gold-dk)">¡Listo, '+escapeHtml(fn)+'! Recibimos tu solicitud</h2><div style="background:var(--gold-lt);border-radius:12px;padding:14px;font-size:12px;color:var(--gold-dk);margin-bottom:14px;text-align:left;line-height:1.8"><strong>Resumen:</strong><br>'+cart.map(function(c){return'• '+escapeHtml(c.name)+' (Talle '+escapeHtml(c.size)+') x'+c.qty;}).join('<br>')+'<br><br><strong>Total: $'+total.toLocaleString('es-AR')+'</strong> — '+escapeHtml(selPay)+'</div><div style="text-align:left;font-size:12.5px;color:var(--text);line-height:1.9;margin-bottom:16px"><strong>¿Qué sigue?</strong><br>1️⃣ Agus te escribe por WhatsApp para confirmar disponibilidad y talles<br>2️⃣ Coordinan el pago como te quede más cómodo (transferencia o Mercado Pago)<br>3️⃣ Recién después de confirmar, reservamos la ropita y preparamos el envío 💛</div><a href="https://wa.me/5493425164672?text='+waMsg+'" target="_blank" rel="noopener noreferrer" onclick="window.fbq&&fbq(\'track\',\'Contact\')" style="display:block;width:100%;padding:13px;border-radius:10px;background:#25D366;color:#fff;text-decoration:none;font-size:13px;font-weight:700;margin-bottom:10px;box-sizing:border-box">📲 ¿Querés adelantarte? Escribinos ahora</a><button style="width:100%;padding:12px;border-radius:10px;background:var(--gold);color:#fff;border:none;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit" onclick="closeModal();loadProducts()">Seguir comprando</button></div></div>';
 cart=[];updateCartCount();
 };
 render();
 }
 
-async function sendChat(){
-if(PREVIEW_MODE){addMsg('Vista previa: chat deshabilitado.','bot');return;}
-const inp=document.getElementById('chat-in'),msg=inp.value.trim();if(!msg)return;
-inp.value='';addMsg(msg,'user');chatHistory.push({role:'user',content:msg});
-const loader=addMsg('Escribiendo...','bot loading');
-const sd=PRODUCTS.map(function(p){return'• '+p.name+' | $'+p.price+' | '+Object.entries(p.sizes).filter(function(e){return e[1]>0;}).map(function(e){return e[0]+':'+e[1];}).join(', ');}).join('\n');
-try{
-const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:400,system:'Sos el asistente de "Mágico Amor", tienda de ropita de bebé de Franck, Santa Fe. La dueña es Agustina (Agus), doctora en Ciencias Biológicas y mamá de Mateo. Respondés con calidez en español rioplatense informal. Máximo 3-4 oraciones. Talles: RN=recién nacido, 0=0-3m, 1=3-6m, 2=6-9m, 3=9-12m. Lavado 30°, no blanqueador. Envíos locales y correo. Pago: transferencia, Mercado Pago, efectivo. Usá siempre "ropita", "canastita", "talle". Stock real:\n\n'+sd,messages:chatHistory})});
-const d=await res.json();
-const reply=d.content?d.content.map(function(x){return x.text||'';}).join(''):'Disculpá, hubo un problema. Escribinos a @magicoamor.bebe 💛';
-loader.remove();addMsg(reply,'bot');chatHistory.push({role:'assistant',content:reply});
-}catch(e){loader.remove();addMsg('Disculpá, no pude responder. Escribinos a @magicoamor.bebe 💛','bot');}
+function sendChat(){
+addMsg('Por seguridad, las consultas se atienden por WhatsApp. Tocá el botón verde y escribinos 💛','bot');
 }
 
 function addMsg(text,cls){
